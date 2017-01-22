@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a9476d59-7d7d-4f06-9690-4b9759d3997c" name="UMLClassDiagram1" linkedPackageId="ab00a758-30e3-4ad4-a9a2-923b7a180ce2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="427a1166-7e04-4c25-86e3-416dff701b88">
+      <profileInstance Id="fb7f2e7b-e802-46c4-8d36-ccc054591d99" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b63b0893-5483-4bea-ad49-332e8602a3fe">
+      <profileInstance Id="b2e2d8c2-6b23-4415-ab5e-91d620ae7c58" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b2b871f8-2665-49af-b159-11fe68c0fb17" name="Khach hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="df183456-5ea9-48ba-9858-842b9b4e78cd" />
+        <targetEnds>
+          <association Id="86a6e2a9-02ee-43cd-b0b2-6932e833eaf5" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c7ae07d-5ab1-4031-ab06-02acbe6908b8" LastKnownName="tai khoan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="beec8c89-6742-4b6b-b73d-f434bb9b34d5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b57e58f-2114-4c2d-a011-e0f07ad3434b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="084f2cde-323e-4878-a8f0-c4a877d52fa0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="8ed3700c-fa9b-4c03-9d22-69c69733deb6" name="Lower" value="1">
+                      <elementDefinition Id="9ccd4ecd-5a46-42bf-8e2f-471f2b91823b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="af08b72e-cb63-406e-8e52-4014196cd194" name="Upper" value="1">
+                      <elementDefinition Id="b1067af9-552d-47c8-b80f-e3b547017a83" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2b73acfe-2847-4c36-87e1-7682082ef444" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="84c02459-333c-4111-98e6-0aec45f9b61b" />
+          </association>
+          <association Id="6e656ac6-bbf9-431a-967c-b01af5768c6b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f304796b-67a9-427d-b92a-b69921e79552" LastKnownName="gio hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bfbeaa4-2320-4f01-b26c-5f2e436f47d5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c525a5b0-ec91-45f9-9a09-359bd31bf593" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a52a69d-c4fb-4c05-8544-abfe5d73394c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e8e7794-6252-403b-8f04-bf863b9e30bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="891c5c27-2713-4464-8d31-6d30cf167d03" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="eda35fe9-2824-475c-a3dc-d6599feedd83" name="TenKH" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05333e29-665e-4871-b045-beb6843aad03" />
+          </property>
+          <property Id="ce5da330-bdb3-4563-b31e-b9c073bfee51" name="DiaChi" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9af7084b-1982-4491-b45a-addc8eb33f0f" />
+          </property>
+          <property Id="d1aa5eaf-e2e0-4804-84cd-6c608a141420" name="SDT" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d8e09d7-a666-4f3a-82b0-e16aface21ff" />
+          </property>
+          <property Id="84ea8d20-01e0-4ac6-9c19-74fc5f8fff91" name="tai khoan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e90de1a6-382a-4193-912e-bcf32384f996" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8f6896ab-6c1f-4d5f-bd74-abe7bd82a967" name="san pham" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="13d61220-85c1-4842-9c65-fdebec4188d9" />
+        <targetEnds>
+          <association Id="acdf756e-7f63-438d-9d3e-b93ce16445bb" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ee4c95b2-6457-4540-841c-ad51b668bd63" LastKnownName="nhom hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="801afd43-c306-4215-8e71-69c17d18d53b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="30912d86-e89f-423a-855f-8a47dd3fd875" name="Lower" value="0">
+                      <elementDefinition Id="e8d59e91-6f31-42ff-81df-2853655b3828" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="573053a1-00f2-49a8-aac5-27ff21c7876a" name="Upper" value="n">
+                      <elementDefinition Id="7ae80953-6ac6-46ff-9221-432f1024e1b6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a85fc839-e7af-4674-9c0b-51f7aac20e9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fb1783a-9e4d-4819-bc53-d7b4b9133091" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f91b27b9-e58f-462a-8f43-725256fc136a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51505632-794a-4235-a530-fa38a9466d11" />
+          </association>
+          <association Id="c31a0e84-6987-4f03-aa25-f91db1fe0b9e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6a6adfd2-c96c-4d13-b022-b2f05e305ee2" LastKnownName="loai san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9204f4e9-d359-44b3-b8d2-074ae69f78be" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ffd935f2-6a4a-4f59-8162-e340ae0834e3" name="Lower" value="0">
+                      <elementDefinition Id="f332957a-b052-41c3-989e-2221f4473fb8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4b5bcbea-b570-4db8-ad95-bf5bda4a0fe2" name="Upper" value="n">
+                      <elementDefinition Id="1933398c-3973-40c3-82b4-05cbd21959f9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="75f7549d-9348-4835-a27c-1144487ef220" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae228643-ac07-42e4-b91e-4b10c841bcfe" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1170b9f1-467d-489d-8798-a319b237b6cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d68a1a1c-4ce0-4f3c-9d67-c54fb28e92dd" />
+          </association>
+          <association Id="058ec2d3-40de-4fcd-ba7c-6bf98e3a7771" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="402abdb1-eabf-4b33-a26c-ce3d7e86906b" LastKnownName="don hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="556faeaf-8026-4233-b1a6-f254c4fe5fda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c427a59a-df1b-4d80-941b-1e2bb7aba3e2" name="Lower" value="1">
+                      <elementDefinition Id="fd2b7d25-8f0b-4e05-9dae-59a958be4361" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="514b3893-54dd-440b-b9fa-2b914309c334" name="Upper" value="n">
+                      <elementDefinition Id="d0c74c71-87fb-4354-b2d1-7df97a19a68b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="70f4d794-c43d-4ffd-a754-bdf03c78d2c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92351c51-7b3d-4479-b766-f1e9292d17ee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4b21c2ac-1642-43d3-9f4a-9d9783a636ce" name="Lower" value="0">
+                      <elementDefinition Id="73330ddf-2caf-42fd-8fd4-9ffa82fb7960" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="bafece04-f3b1-4bb7-942d-527b3e221ae8" name="Upper" value="n">
+                      <elementDefinition Id="fa7ec4e1-cbfc-4d74-b0ee-497f01a653b8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="74692e1c-3cb9-40fd-8b51-c3749c896de2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ee30252-6476-4a59-b88c-c60208589a21" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1aed38f9-bab1-4d7c-80e0-3f2f0063913e" name="loai san phan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="32243036-dffe-464d-980e-bee452b29886" />
+          </property>
+          <property Id="4fd4676a-538b-4a70-9f1c-bc40791c0149" name="ten san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1955b002-2e51-4b03-be34-f1604d9a6ac6" />
+          </property>
+          <property Id="84f6fce4-3895-401e-a6a5-7326176aa548" name="nhom san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8f2d11a-19e7-4526-b430-51ff4a2aaab8" />
+          </property>
+          <property Id="a8c1b385-d304-4ef5-9545-193ab32968c0" name="mo ta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="042321c1-86ad-44b0-acdd-40a8929fafcf" />
+          </property>
+          <property Id="5af229ab-7266-4d0c-8203-bbcc44a3b145" name="so luong" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ad9a1a26-2135-4986-a4f6-77b511ef7b16" />
+          </property>
+          <property Id="ea623726-58e4-4793-aff3-ae2eab06c663" name="don gia" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a75d4882-bc66-4d61-ad5f-f9c79f73e9ef" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c7ae07d-5ab1-4031-ab06-02acbe6908b8" name="tai khoan" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d0a30709-55f7-4281-abe9-29fbd72ce2e9" />
+        <ownedAttributesInternal>
+          <property Id="552ef000-ee83-4a91-aa2a-71d48845a65d" name="pass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcbf3cfd-c5b6-4f4f-86d4-c7536290310f" />
+          </property>
+          <property Id="a89e6fb9-85b8-4c68-a17e-0dbbb2cf5902" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75703be0-cff8-490d-aa77-0a0d0d752e91" />
+          </property>
+          <property Id="0a2e5140-0b61-418f-9e72-8a801a32411e" name="phan quyen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="432dbcc3-fd7b-4cc3-b033-dfccbb47f3a2" />
+          </property>
+          <property Id="33e8dcc5-082b-482e-90ae-855713757126" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e510fe3c-b8be-43ea-9efa-4543ecc26562" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="402abdb1-eabf-4b33-a26c-ce3d7e86906b" name="don hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4210807-17b5-4268-8cf0-6fd3dc7c147d" />
+        <targetEnds>
+          <association Id="34b333df-60b1-45e3-9437-c83bc3a864ea" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7d6c5d65-17ab-472b-8c16-6d59d6d7672a" LastKnownName="hinh thuc thanh toan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1fe2d61a-e853-4f0d-ac2e-737c5f44faf2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="440be264-77e5-472f-bddb-e11a193aa341" name="Lower" value="1">
+                      <elementDefinition Id="05f0e4d8-19a7-46bb-a060-305d58af19db" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c3a99077-975c-4b8a-bec1-2cfd51b535e7" name="Upper" value="n">
+                      <elementDefinition Id="7939768f-deff-43c4-9e74-74ae2dbfb318" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c5a44a53-4404-4922-ac17-9d3e32c4a80b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df8fde13-5ce2-45c8-b1df-724c2402db6e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="95092460-ad4a-41b8-85cb-ee8ce1d15ef6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bfc1bbcd-269b-4005-b937-2a1337a59c72" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="443efa13-aac0-405d-9de4-e257bf1b9e2d" name="ma don hang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e867ce9-195e-4286-a5da-5b22fb04069a" />
+          </property>
+          <property Id="6c8e1f78-d845-4bc1-8463-37216d167438" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce46f081-9936-4f46-8d71-4c8d232918c2" />
+          </property>
+          <property Id="a815b6cd-b1bd-47d9-a4ca-462bb8fecdab" name="hinh thuc thanh toan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="363cf14b-0fb4-4c8f-9273-60efd6f24b21" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="95d318fc-6942-459b-b5b3-5fabc2be1e76" name="chi tiet don hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d668712b-50e6-45b0-a2dc-6b18b8f719b5" />
+        <ownedAttributesInternal>
+          <property Id="34fc32f0-372c-41b2-8653-420b2ed76d2b" name="don hang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9346278d-8010-43a1-90c4-0c0b27f37052" />
+          </property>
+          <property Id="da921946-4636-48ed-8493-38039e5abb68" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2a4e017-70b9-4615-82fd-9c5a635add8a" />
+          </property>
+          <property Id="a3b84650-68fc-4c99-b0f8-2d53cb1d557e" name="so luong" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ed10462-d5ed-4c71-a9c6-a0b64b11792a" />
+          </property>
+          <property Id="e665e7e5-7078-4db0-8c4a-b40330956d0a" name="don gia" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64c10770-125b-4a8d-a64b-bec60332ffb5" />
+          </property>
+          <property Id="39c8c20c-c574-4da8-84d7-826fc826a203" name="ngay giao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5bac37be-035a-4aee-986f-d9b8c0344d98" />
+          </property>
+          <property Id="519c28d1-d5c6-4a96-af53-cfc3dee479a6" name="ngay dat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0a8bfe70-b04c-432c-8f3e-c07831444207" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a6adfd2-c96c-4d13-b022-b2f05e305ee2" name="loai san pham" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0adb3c6f-4e66-4406-baf5-15b398541667" />
+        <ownedAttributesInternal>
+          <property Id="9b639fdd-c42e-4953-b281-c5f14ff94947" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="183f9b6e-f961-489e-9d05-82d00a50a431" />
+          </property>
+          <property Id="23be93e9-c355-4a09-8829-1ef537b21f58" name="thong tin loai san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="135ed10b-8e68-4fe5-98e2-0d7981d5fcf1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b357db1a-9b34-42ef-801c-bd4d97be5111" name="phan quyen" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77d678e9-9dda-4844-bdb2-27a51e1b855a" />
+        <targetEnds>
+          <association Id="c5959f24-fa99-45da-a7c0-c39945a029a1" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c7ae07d-5ab1-4031-ab06-02acbe6908b8" LastKnownName="tai khoan" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f90e1fe5-fc19-4ec1-88f8-3c6750d41273" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45114d37-d8de-4085-8b08-9b31a4016642" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="813b3180-8cf2-4a81-8906-b46b47eb6595" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="558d72ff-20b2-4938-a458-03244b05fdff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77add9e4-4afb-4c46-9b9f-ca78ad5a3880" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="62df5b53-06f0-4428-9af7-f1978bf2830c" name="ma phan quyen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d2f2384-b116-49a7-92c9-f26c832a0ca3" />
+          </property>
+          <property Id="609596bc-6a7e-4542-926b-b93116913773" name="loai quyen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="55f0d6ae-6e90-474d-8b0c-87e0ff298d02" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee4c95b2-6457-4540-841c-ad51b668bd63" name="nhom hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90af64c8-79c5-4c0d-a07e-78e7876960bb" />
+        <ownedAttributesInternal>
+          <property Id="e77806d8-d74e-4a52-9345-b6c57f5f8127" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0544d13d-e97f-439b-b3da-42d5b93795d8" />
+          </property>
+          <property Id="3a84a063-cd36-4417-b27a-02d80bca3434" name="thong tin nhom hang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ceacdcd-088a-4e31-8fcc-b8f058e989f0" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5076a382-df0f-4d2e-9fcd-b9d847646cee" name="thong ke doanh thu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b696611-219b-432c-ba09-ca7d016c467d" />
+        <suppliersInternal>
+          <dependency Id="d35b529e-96f9-4e91-88d0-21249fffdea9">
+            <classMoniker Id="402abdb1-eabf-4b33-a26c-ce3d7e86906b" LastKnownName="don hang" />
+            <elementDefinition Id="63d1af5c-364c-4488-aa7e-933e7f742144" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="96f17ba2-092b-4103-b858-c3fe7fe550f7" name="thang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5da2132e-491c-427d-b202-38c015d81f89" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f304796b-67a9-427d-b92a-b69921e79552" name="gio hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce066028-8ed4-4515-9fcc-6479e7007be9" />
+        <targetEnds>
+          <association Id="17d37c36-6afc-425b-a7d8-c48b6e7ee453" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8f6896ab-6c1f-4d5f-bd74-abe7bd82a967" LastKnownName="san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7106c5af-b17d-4ace-b3e2-091be8a059cc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="27845b1b-5368-4d83-8128-59ddcc5e1b98" name="Lower" value="0">
+                      <elementDefinition Id="1921e593-56a1-4279-af14-6c7a777521bc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ee7da094-c259-47ec-be07-dbb429216a49" name="Upper" value="n">
+                      <elementDefinition Id="d39a451a-f455-48f9-b974-70dc63ed1bbb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="da4accf6-5cae-4df3-9956-e78428832a3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="867cbecb-1a82-406f-9b77-273dccb3835b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7deab919-9db9-4377-9380-956314929d1b" name="Lower" value="0">
+                      <elementDefinition Id="623140f8-f9d0-4f7e-b38f-f413066ea03e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a15f228e-6a40-4fac-aa58-23c19fc68823" name="Upper" value="n">
+                      <elementDefinition Id="d886ef38-d0dd-4cdd-a44b-c85e6fd7b799" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="dc18b66c-9e00-4533-84c7-f51a335e8f2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b99309e-c3bd-4588-960a-e2cb0d3d0ed1" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="da63610b-c058-424e-af23-bb8456250472" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13f6930b-0a12-450c-bedc-682647718583" />
+          </property>
+          <property Id="19730e40-51ce-4b01-b5c7-a4f1dad52891" name="so luong" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0651797b-0c58-4dce-b767-42523421aee6" />
+          </property>
+          <property Id="7daa7ee3-f59e-4308-9e1b-c5d0eaf0f672" name="thanh tien" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="369c13ef-ffa3-449a-a044-d0acdc9caa96" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4438455f-d4cf-473f-9067-8c39df21c001" name="thong ke dat hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a232f9c1-36e1-48b5-b0a5-515697cacccd" />
+        <suppliersInternal>
+          <dependency Id="ad156b4e-2b97-484a-9225-94042e29106e">
+            <classMoniker Id="402abdb1-eabf-4b33-a26c-ce3d7e86906b" LastKnownName="don hang" />
+            <elementDefinition Id="4059586c-5658-42c4-9c0c-38d560284954" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="f295419d-4596-410d-b4e5-5112fdf280aa" name="don hang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f89c4173-dcf8-4c94-9f6b-369a1496cdda" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ffd1ed21-72df-4e5d-a5c7-a20d91b0b4c7" name="thong ke so nguoi truy cap" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a4b96493-3607-4847-a4d4-50f340058f3d" />
+        <suppliersInternal>
+          <dependency Id="48fd11a3-0542-494e-9749-c237f1c3482c">
+            <classMoniker Id="3c7ae07d-5ab1-4031-ab06-02acbe6908b8" LastKnownName="tai khoan" />
+            <elementDefinition Id="bdcb5028-9185-4997-9433-db3382a646ea" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="0365723c-e710-4d1a-ae65-4a5aa9b73b39" name="so luong truy cap" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0303f4e4-6078-4c4f-ba32-fdcb7e07a3f2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d6c5d65-17ab-472b-8c16-6d59d6d7672a" name="hinh thuc thanh toan" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c31374da-2be4-4af3-98a5-25bb7dcddd04" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e78d53c0-f07a-4cc5-8d7f-e4ae8594c9cf" name="thanh toan bang tien mat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f234d7ee-299d-40fc-b49f-6730f2c9759c" />
+        <generalsInternal>
+          <generalization Id="627e085a-feb2-48d0-bf79-b126d200f66f" isSubstitutable="false">
+            <classMoniker Id="7d6c5d65-17ab-472b-8c16-6d59d6d7672a" LastKnownName="hinh thuc thanh toan" />
+            <elementDefinition Id="01e89bc1-2cc3-4223-b306-9da48b0974f6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="236d4897-daba-41b3-954f-2122600cf560" name="thanh toan bang ngan hang" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8cccc1db-0fdf-454f-ab08-cd9fdcdcde7a" />
+        <generalsInternal>
+          <generalization Id="6f8c2699-1e21-43c7-bf8c-041e92844695" isSubstitutable="false">
+            <classMoniker Id="7d6c5d65-17ab-472b-8c16-6d59d6d7672a" LastKnownName="hinh thuc thanh toan" />
+            <elementDefinition Id="4bc6e16d-7215-4533-ad7a-cfe66ff274a9" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ab00a758-30e3-4ad4-a9a2-923b7a180ce2" name="qlbah-usecase">
+    <elementDefinition Id="99bde675-456b-4465-a656-1d82dacae047" />
+  </package>
+</logicalClassDesignerModel>

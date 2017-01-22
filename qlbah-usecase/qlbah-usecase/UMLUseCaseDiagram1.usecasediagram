@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5f40fc0d-0a06-46f5-9110-4407552193c1" name="UMLUseCaseDiagram1" linkedPackageId="d26bb505-0932-489a-b739-f7718114b45a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1dd9fbf3-4820-4b44-9e21-45ebb73125ae" name="nhan vien" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6bf5774d-0455-4e7d-96ce-94fb9b57425d" />
+        <targetEnds>
+          <association Id="e5d9cf63-74f3-4544-8430-1d725333e9e0" isDerived="false" sourceEndRoleName="nhan vien" targetEndRoleName="dang nhap" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f71d99e-ffee-49db-8bb2-65b328584121" name="nhan vien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1127970c-189c-4694-9d81-4d9828cd31c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcdb62ce-3f1b-4344-be95-689d0b411e47" name="dang nhap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0cf5595b-20c5-4fcd-9d2a-b7bd2b1f1a1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc5cd649-7f77-48d8-b920-d7a510bb72c4" />
+          </association>
+          <association Id="6055ae77-7d09-4901-a1cc-d6aa09e26671" isDerived="false" sourceEndRoleName="nhan vien" targetEndRoleName="doi mat khau" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e0ffc0e-981b-48a4-b57f-05f6c502e98f" LastKnownName="doi mat khau" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d08143b5-f077-4269-a79b-d98b3bb84a96" name="nhan vien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d21d129-6af7-4ea9-aab2-01e130528e90" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0deacbe8-594d-4a12-b08d-9ea38c6f28df" name="doi mat khau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9bd64333-cb95-41e5-90ae-6b2eb8dab606" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="53018481-d974-4cbd-9b81-7cc99edcdc28" />
+          </association>
+          <association Id="54726534-b291-4090-a2d1-18481e663edb" isDerived="false" sourceEndRoleName="nhan vien" targetEndRoleName="dang ky" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37478d39-1c16-46b1-b036-7cc0b1352ad0" LastKnownName="dang ky" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ac2b313-6f31-4d25-967c-770068903b78" name="nhan vien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36a52b54-49b5-4e22-aa7a-1cc76d272db1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="226f64b6-9c53-48bc-9d4b-ed4153cfac7c" name="dang ky" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c4c44d4-b59a-443a-b667-5324555f36e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="627db653-4b5b-4db7-922a-1db96679912c" />
+          </association>
+          <association Id="e73a9694-108d-4818-a708-e2c1cf8bc393" isDerived="false" sourceEndRoleName="nhan vien" targetEndRoleName="quan ly san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="293c84ca-3221-4004-b513-01b5b241591b" LastKnownName="quan ly san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7702adeb-9b0f-433d-a41e-14e9656abcc8" name="nhan vien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c77021a-cf09-4307-8e82-5c2681161300" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a4f926b-6897-4815-b0eb-faf006aebf76" name="quan ly san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0d16f64a-a400-4751-84f1-e42bd785785d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb030680-43b5-4b58-8ae6-2780bf4f7e60" />
+          </association>
+          <association Id="734a5bb8-1347-4a59-8f11-77e5d0966f3e" isDerived="false" sourceEndRoleName="nhan vien" targetEndRoleName="quan ly don hang" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5d98a265-8396-4d6d-a0a5-f0cfbb252e4a" LastKnownName="quan ly don hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="395164e5-aad0-4539-8bc5-901d27a7e33b" name="nhan vien" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a86ce16-4d9c-4d2c-8466-fac124ee4b04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04869855-a847-447a-ab60-d639d54ae785" name="quan ly don hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="54b3baa4-1650-4a41-9f79-f7bb3f088a4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="957ac464-a437-4ba0-9059-bfc2a0802fb5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="82370166-fa92-469a-ba07-878497314f3d" name="khach hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04e0ebaf-8db5-4e69-b058-b2db573e8ffb" />
+        <targetEnds>
+          <association Id="fdf198e2-2c3f-47ab-9cad-e7008f1329a9" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="dang ky" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37478d39-1c16-46b1-b036-7cc0b1352ad0" LastKnownName="dang ky" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64f6b8db-083b-4aef-80ec-a78177f14488" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa9a8908-e553-49dc-b33c-8b49f19d2e17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8660dff8-04e7-41a8-9e90-f843ee942a89" name="dang ky" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bf5b334-0ead-49bd-bdc1-c085242ac1dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cdd77381-7365-4bcc-be67-30c40a09c0e3" />
+          </association>
+          <association Id="20fd93b7-ad94-45b5-94cf-e92f0e925883" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="dang nhap" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c677760-de4d-4b2e-8dc6-3688f78917ae" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="696b0feb-3368-4b21-a877-fe227c1b15ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="831127a4-ed0c-4832-943c-14e7bc01e6e4" name="dang nhap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dae0b504-c0cd-48a8-8c74-3fed640f0231" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6533a833-4693-4c24-a079-2d85935508f2" />
+          </association>
+          <association Id="5fb75c14-05a1-4916-9546-d9f02c30205a" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="doi mat khau" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e0ffc0e-981b-48a4-b57f-05f6c502e98f" LastKnownName="doi mat khau" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71f27c6d-d9b7-423b-b8a6-57eb5aba0971" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b4e8a50-7760-48af-96e9-6027c480c709" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6073a73e-8886-4427-9d0f-7592eaf7a210" name="doi mat khau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6dfcbcbe-50b6-4f01-a59f-1df1b95d14df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9d05dcb6-83eb-4979-adfe-e2b1756e0d5f" />
+          </association>
+          <association Id="506c03e7-95de-4e09-9a00-0563365041a7" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="tra cuu san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17f9e85e-1447-45f1-b360-7b10ddbadad4" LastKnownName="tra cuu san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51505bc4-278a-4eff-9bd1-e14620fdb3e6" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="949dbea0-49f4-4f08-964a-5d5dd87173da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c12b327-2348-4ffd-933f-9f4fb7de9697" name="tra cuu san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9a4ece7-f7c6-48a4-92b8-a6d3251765d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d26a57c0-e739-47de-9355-b1ee52e99edf" />
+          </association>
+          <association Id="3ff7bb3c-60b6-40bd-8886-d95a4cac4044" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="quan ly gio hang" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="62cfa000-6b8f-47ae-871b-8d375f756029" LastKnownName="quan ly gio hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1326c3dd-5243-47f4-b265-844e5e54f312" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cdf4f982-9b35-451f-a71e-9adea4936adf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9989cf4d-f8cd-4f79-89c3-67f423250648" name="quan ly gio hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="980e9a49-19bf-4962-9739-eef2b7f1d263" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9c639ab7-733f-4d37-a346-fe856c9833ea" />
+          </association>
+          <association Id="1551c01a-75c1-45a5-bb01-bb3f322aa546" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="xem thong tin san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fc5e03f4-2471-44d4-8e2b-38da2ff7a14a" LastKnownName="xem thong tin san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9963e220-5dfa-4c10-a7d1-27f681f90cca" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c8cd811-b1fd-49dc-aa5a-aa032aae43e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bda3f9b5-3b9f-4ea6-8b40-822c47576289" name="xem thong tin san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f5cddb5-3a47-45c2-8055-1bac09918e52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e7a8531-3bc1-48a0-9c31-4e9c7907e700" />
+          </association>
+          <association Id="6aed5361-4360-4867-b0dd-f038e50cdc4b" isDerived="false" sourceEndRoleName="khach hang" targetEndRoleName="dat hang" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a350db78-1cc6-4063-9e79-13b7ec666ec9" LastKnownName="dat hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c8633c6-1307-4a06-a9d7-7264ba1890a1" name="khach hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ed127128-68dc-4280-8a69-39c8e700ef05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43cefca5-c0ae-41a9-95f7-bdee3c4656f0" name="dat hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b17a609d-9dfc-4d3f-a048-0fdf1752fa77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa3c6ead-cf26-4cc4-ac32-b6ccab41178b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="60057f1e-dd6d-432a-8bd9-569ebb2b67dc" name="admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="566a4fd8-b8e0-48ef-9e33-398a430750e3" />
+        <targetEnds>
+          <association Id="95b92ca5-ab38-4404-98fc-8dbd0f7a754c" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly tai khoan" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a6d2931-8efe-4a4d-8cc2-86a37aaf3d5f" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="78456bc3-2e6f-42c4-a368-cad5d660d49c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2bef1376-ff27-413b-9d7f-fe6c37068b13" name="quan ly tai khoan" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c346cc31-4797-416f-98c0-ed5cc5c39df3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="82b0f283-ba74-45bb-b284-08c437638e04" />
+          </association>
+          <association Id="f985fea0-94dd-4f9e-8585-52c1d30c502f" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="doi mat khau" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e0ffc0e-981b-48a4-b57f-05f6c502e98f" LastKnownName="doi mat khau" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f7ddfcb-fa88-4403-be14-3ca684a35cf7" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15bece19-6558-47a6-924c-80221c1abd40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d92ddfb1-1499-43ab-abc6-7c19997d9728" name="doi mat khau" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f60795c3-38a0-47e7-b93e-e3ac4aa7a74e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14abaeaf-b2c8-4187-a3c5-d1058a58d6f5" />
+          </association>
+          <association Id="c28adbf3-ff90-4ac4-9b1d-fb97726e62e6" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="293c84ca-3221-4004-b513-01b5b241591b" LastKnownName="quan ly san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e74ba013-8df8-493f-a7a7-112b5c41f0c7" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fcb2dbb2-90fe-412e-b3d6-66728aeef7bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0a81e10-eb72-4892-bd6f-2fee67c3f451" name="quan ly san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="37495e84-0231-47b3-b7ba-73f5dd42b2e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57eb5e57-f5cb-4e74-bee7-cc9b9560c582" />
+          </association>
+          <association Id="5363df2b-b888-4078-a5ca-a483221fa35e" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly loai san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="255e2cc4-dde8-48d3-8b65-9b5409def3ab" LastKnownName="quan ly loai san pham" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f9b79b6-345a-4489-b04f-c466973a0dcf" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e4dca30-8f6e-45f4-ad70-cb5af4a118f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6eda5263-b793-4223-a4bd-6641b9d72f4a" name="quan ly loai san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8ecfddf-ff08-49a1-84b8-58e310540190" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c1905ad-06b1-431d-b1f7-6938475ccd53" />
+          </association>
+          <association Id="609050d8-f3aa-4251-a362-c4bffcf69ed5" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="bao cao / thong ke theo thang" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="feff1e6c-878c-4828-8f4e-6134f7a6a76b" LastKnownName="bao cao / thong ke theo thang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad25fe24-e1cd-410e-baff-7904511c9a2a" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26df09b5-769f-4c2a-9629-95613d90b0bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92344ffe-9787-448c-b24c-a9dbafc66470" name="bao cao / thong ke theo thang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1d13b503-7781-4532-bfd7-26a38ecfed3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b302003-d78e-486e-8b21-505a6f004a5f" />
+          </association>
+          <association Id="431179b1-d182-4914-b894-09884d476f44" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="dang nhap" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4488dcf0-9d66-433c-be2c-61500d62e098" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="589472ae-ab0b-4808-880b-886b50e945ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a605ed62-7da4-49ae-a829-6f496cfb14cb" name="dang nhap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f2b11538-dd6f-423a-981d-7bc930f4d760" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22e9fadd-28bb-4115-8941-2e54222f08c7" />
+          </association>
+          <association Id="ad7815bb-42fc-430e-802f-3688b37efa47" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly nhom hang" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="444be576-a4a5-496d-b95d-e56d320df245" LastKnownName="quan ly nhom hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0dbeb9fb-fe57-4a93-b278-4be65b517ee6" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b25cc3ae-7d39-4fc8-850b-843a95aef1e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2081ca22-3ca0-4a63-80d7-9bfa530b80db" name="quan ly nhom hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6199470a-7377-4466-bbde-baf1c642ff9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2d63c7a6-b4c6-408b-af4f-4e290fd4d291" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" name="dang nhap" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="37478d39-1c16-46b1-b036-7cc0b1352ad0" name="dang ky" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6f35bd5-5fbc-4573-b294-48dbb00e7736" />
+        <extendedCases>
+          <extend Id="1ab11677-8df7-4e63-bded-66d223b0e6a0">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="66b7d377-e980-411e-a1df-311ad84d68f0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b696318c-079b-4e97-8275-77f1251fa4e8" name="quan ly nguoi dung" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c4a612a-6497-4319-aa64-c02fe19aecc4" />
+        <additions>
+          <include Id="65cfd5ab-3b5a-4dd1-b062-183d0127a834">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="dffd437c-08c2-4237-9079-49dc9066504a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="20f4a533-b816-4b88-9bbf-6c34d24e169e" name="them tai khoan" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56b1df99-48b6-4101-810f-d5800c49cac7" />
+        <extendedCases>
+          <extend Id="c969eb6c-cbba-4bc4-9204-b78d16e0ef73">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <elementDefinition Id="93c56eb7-3648-405c-9a62-220dc07dc004" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b87b0f60-581e-4602-b076-b783fd2c2864" name="xoa tai khoan" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0ba914e-f163-4f47-9432-8087fc838a6f" />
+        <extendedCases>
+          <extend Id="903e6dff-985c-4b2f-b763-30c402539801">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <elementDefinition Id="beb79a05-5d8a-45b0-9def-f0302232e9cb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="12f091ed-0fce-4191-a7fe-d6edde9d8ee7" name="sua tai khoan" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4f80714-ad91-4351-aa2a-7aa974fb161a" />
+        <extendedCases>
+          <extend Id="60ea2c90-c1c1-42c9-b9c3-920e847b2d10">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <elementDefinition Id="23d99832-4ad6-4780-98ad-73787baf63f5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e0ffc0e-981b-48a4-b57f-05f6c502e98f" name="doi mat khau" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54d47810-d69b-435f-b2ac-48184c28bf96" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="293c84ca-3221-4004-b513-01b5b241591b" name="quan ly san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29c7e154-d7f2-40c3-949f-6888eeed5be0" />
+        <additions>
+          <include Id="fde54e13-a65a-417e-9787-feef235ec8fd">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="fcc1b1fc-4791-473d-912a-4f1ac330a760" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="255e2cc4-dde8-48d3-8b65-9b5409def3ab" name="quan ly loai san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27aeb025-514c-4d6e-8986-1c6111028285" />
+        <additions>
+          <include Id="efb75bac-9228-4b58-add7-c037ca226709">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="6f1e8433-7f09-4b7e-bf7b-fff37a93503f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="feff1e6c-878c-4828-8f4e-6134f7a6a76b" name="bao cao / thong ke theo thang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1a35b82-8577-4023-84c4-e190c6e23aed" />
+        <additions>
+          <include Id="fdbe0059-8342-4619-b5d6-a3c07fc64f48">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="21c9a29a-0a3a-4f7c-ae09-91b28217019a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5d98a265-8396-4d6d-a0a5-f0cfbb252e4a" name="quan ly don hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d871c20-d654-4a07-a11f-6af4720caa2f" />
+        <additions>
+          <include Id="c5062e1a-3a54-4ca1-a8ca-cd8b9de3da05">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="1aeb51f8-8bdd-4f6c-81a4-c76d34377de8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="17f9e85e-1447-45f1-b360-7b10ddbadad4" name="tra cuu san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bf42191d-e0c0-42ac-be41-1297d64bb67e" />
+        <extendedCases>
+          <extend Id="3d7ed97a-ef10-4aee-8222-278140c353c8">
+            <useCaseMoniker Id="4d09df82-b08f-42fa-9ee0-2cbbeecd90d7" LastKnownName="Them san pham vao gio hang" />
+            <elementDefinition Id="ed4ba904-c2a4-4ad8-9b2e-a9a779a62915" />
+          </extend>
+          <extend Id="6f195e1a-79d4-468d-a712-df3a46361b7f">
+            <useCaseMoniker Id="fc5e03f4-2471-44d4-8e2b-38da2ff7a14a" LastKnownName="xem thong tin san pham" />
+            <elementDefinition Id="fc4c1c39-d144-44ee-85f4-776d4ba8ef84" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fb2fd94b-0d4a-47fa-af66-cdbc6a4a36b4" name="thong ke don dat hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3fd557dd-e7ad-4270-9812-fe7dcb151f7c" />
+        <generalsInternal>
+          <generalization Id="8d8bca84-75ee-43f0-8fc5-2af1cbd44a89" isSubstitutable="false">
+            <useCaseMoniker Id="feff1e6c-878c-4828-8f4e-6134f7a6a76b" LastKnownName="bao cao / thong ke theo thang" />
+            <elementDefinition Id="9297a675-87ee-4b87-a432-87f30c8f273b" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="eabefead-d4af-4322-bc61-45b5cabb736f" name="thong ke doanh thu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b71ebf4-f061-4925-9022-268428f55326" />
+        <generalsInternal>
+          <generalization Id="c3b3178d-80c5-4c88-af53-0ebed8a6d318" isSubstitutable="false">
+            <useCaseMoniker Id="feff1e6c-878c-4828-8f4e-6134f7a6a76b" LastKnownName="bao cao / thong ke theo thang" />
+            <elementDefinition Id="2046a1b0-48f2-4c0e-b015-ace4a4cc289e" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78069755-9425-44b4-a9be-1e54cb19f3e9" name="thong ke so nguoi truy cap" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7cf26a91-3443-43b6-9f78-8bc1d18fe2cd" />
+        <generalsInternal>
+          <generalization Id="5f6a449f-b102-4bc3-9985-2ada5da9f838" isSubstitutable="false">
+            <useCaseMoniker Id="feff1e6c-878c-4828-8f4e-6134f7a6a76b" LastKnownName="bao cao / thong ke theo thang" />
+            <elementDefinition Id="794859a9-ac7c-40b3-a181-2d7eae15e520" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8617c14a-8cd8-4863-bd76-670709afa083" name="cap nhat thong tin nguoi dung" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c3ff239-5f2a-41a3-a9d2-8aae03210abd" />
+        <extendedCases>
+          <extend Id="12a0360c-1214-4fd2-910e-512b31b60c1a">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <elementDefinition Id="aedac7f7-8243-4fcd-8816-b002c7acaac4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a350db78-1cc6-4063-9e79-13b7ec666ec9" name="dat hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34e308b4-ed68-40a4-a08c-c1fdd1b08add" />
+        <extendedCases>
+          <extend Id="3e1b0692-ece9-4171-9f15-cd750afe1a5a">
+            <useCaseMoniker Id="4d09df82-b08f-42fa-9ee0-2cbbeecd90d7" LastKnownName="Them san pham vao gio hang" />
+            <elementDefinition Id="4e75bd3f-2c93-4149-a65d-a4ca35a6c76d" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="62c97030-3a3e-48fb-835d-4dd9800f1b54">
+            <useCaseMoniker Id="c40b3bce-78fd-4fa7-ae94-7c244387fe93" LastKnownName="thanh toan" />
+            <elementDefinition Id="38c9a409-6455-4151-8f67-7515549a727d" />
+          </include>
+          <include Id="bee58ac8-a27b-4052-b86f-8abb6fb09ebe">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="9be314bd-89f3-40fc-80a9-f9629ec9627e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c40b3bce-78fd-4fa7-ae94-7c244387fe93" name="thanh toan" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="daed01db-ed67-4fd8-a097-6665f74e5dc4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2177d1b1-5296-45f7-90ab-c4302575d5a4" name="thanh toan bang tien mat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03f68595-5695-43db-a865-d389c5d7d0e5" />
+        <generalsInternal>
+          <generalization Id="0a245215-6e70-4f58-982e-f419b71ba783" isSubstitutable="false">
+            <useCaseMoniker Id="c40b3bce-78fd-4fa7-ae94-7c244387fe93" LastKnownName="thanh toan" />
+            <elementDefinition Id="09f6e877-0dc3-40d5-a551-184953dc4fb8" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2afda10c-53e3-4069-9f0d-7031a4f70d83" name="thanh toan bang the ngan hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7301435c-b601-4c3d-b851-042e0bfb5bdc" />
+        <generalsInternal>
+          <generalization Id="d7184239-9742-4f60-96cd-75d1664d6584" isSubstitutable="false">
+            <useCaseMoniker Id="c40b3bce-78fd-4fa7-ae94-7c244387fe93" LastKnownName="thanh toan" />
+            <elementDefinition Id="d7cc45c2-b7d8-42b6-a063-79f5574dba20" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="8487a689-b496-45f9-ac64-2f20d51444d0" isDerived="false" sourceEndRoleName="thanh toan bang the ngan hang" targetEndRoleName="ngan hang" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="8f766cac-963f-4bb0-9d7f-91bd4df4c955" LastKnownName="ngan hang" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a4c5d10-9164-4a0f-8625-9f69ed8f07bb" name="thanh toan bang the ngan hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f53ccfc-cccb-48c8-aa8d-6628c046b84c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0780252a-230f-4e0c-9109-9a8675a22f10" name="ngan hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04f8c67f-50e6-4f76-b7f6-1e5ad50a67db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="025c73ce-be96-4db7-9a75-5d8d7298c7fa" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8f766cac-963f-4bb0-9d7f-91bd4df4c955" name="ngan hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51fabc08-5475-4715-b55e-4ee27b01bcbd" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="62cfa000-6b8f-47ae-871b-8d375f756029" name="quan ly gio hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4d09df82-b08f-42fa-9ee0-2cbbeecd90d7" name="Them san pham vao gio hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40bf26fc-784b-4603-ad50-be0bf7a37317" />
+        <extendedCases>
+          <extend Id="824d1bcb-656c-42b5-828e-4539cd2a3e0c">
+            <useCaseMoniker Id="62cfa000-6b8f-47ae-871b-8d375f756029" LastKnownName="quan ly gio hang" />
+            <elementDefinition Id="894c012b-2343-4b66-bfca-1537a4ee5fb6" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f1638ea1-b5e7-4cf6-af8b-142ecee96f72" name="xoa san pham trong gio hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0290b7b5-2fd6-447b-9247-035ddf6e0541" />
+        <extendedCases>
+          <extend Id="78762708-38bf-4381-a924-4e9cec4ca232">
+            <useCaseMoniker Id="62cfa000-6b8f-47ae-871b-8d375f756029" LastKnownName="quan ly gio hang" />
+            <elementDefinition Id="695c39b5-a254-478c-851c-1bb5891aa79e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0f7ad0c-acaa-43d1-883c-71388db2449c" name="cap nhat san pham trong gio hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61c2ffcd-5fa5-4b9a-81a3-8e42af9845ff" />
+        <extendedCases>
+          <extend Id="36bf442f-e4d3-4b76-9827-3a0c9e0d91c7">
+            <useCaseMoniker Id="62cfa000-6b8f-47ae-871b-8d375f756029" LastKnownName="quan ly gio hang" />
+            <elementDefinition Id="9e2d8ca7-a6e7-4aa6-bead-b53e2213843d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fc5e03f4-2471-44d4-8e2b-38da2ff7a14a" name="xem thong tin san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43305f41-0d37-4562-bc13-406a0d4a9309" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="444be576-a4a5-496d-b95d-e56d320df245" name="quan ly nhom hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fea2a055-641e-483e-bb30-a1f948b7359f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d26bb505-0932-489a-b739-f7718114b45a" name="qlbah-usecase">
+    <elementDefinition Id="99bde675-456b-4465-a656-1d82dacae047" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0b10ac34-eb4d-4701-a491-df9d3810d58f">
+        <profileInstance Id="7c5d7d31-9c83-46de-8941-817b1419e6f0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b28e10b0-08ce-4ba7-a342-fbd4213ed5b7">
+        <profileInstance Id="b840602f-eb91-4518-b422-ac06d9d95e60" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

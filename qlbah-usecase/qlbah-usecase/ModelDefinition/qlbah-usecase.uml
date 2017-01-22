@@ -1,0 +1,3385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="99bde675-456b-4465-a656-1d82dacae047"
+  name="qlbah-usecase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="6bf5774d-0455-4e7d-96ce-94fb9b57425d"
+        name="nhan vien"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dc5cd649-7f77-48d8-b920-d7a510bb72c4"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="dang nhap"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1127970c-189c-4694-9d81-4d9828cd31c4"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0cf5595b-20c5-4fcd-9d2a-b7bd2b1f1a1a"
+                  name="dang nhap"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="53018481-d974-4cbd-9b81-7cc99edcdc28"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="doi mat khau"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54d47810-d69b-435f-b2ac-48184c28bf96"
+              LastKnownName="doi mat khau"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d21d129-6af7-4ea9-aab2-01e130528e90"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bd64333-cb95-41e5-90ae-6b2eb8dab606"
+                  name="doi mat khau"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="627db653-4b5b-4db7-922a-1db96679912c"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="dang ky"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f6f35bd5-5fbc-4573-b294-48dbb00e7736"
+              LastKnownName="dang ky"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36a52b54-49b5-4e22-aa7a-1cc76d272db1"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c4c44d4-b59a-443a-b667-5324555f36e6"
+                  name="dang ky"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="79d2cbd7-a15c-4b5b-a9e4-5844516e9b7a"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="bao cao theo san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="22388462-7595-447b-ba48-c50d6a242c95"
+              LastKnownName="bao cao theo san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76c9d3c5-39a7-4391-be65-e50cbbfa4142"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba93f8e4-2bd8-4ade-8c76-d6b242fbcbcb"
+                  name="bao cao theo san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb030680-43b5-4b58-8ae6-2780bf4f7e60"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="quan ly san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="29c7e154-d7f2-40c3-949f-6888eeed5be0"
+              LastKnownName="quan ly san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c77021a-cf09-4307-8e82-5c2681161300"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d16f64a-a400-4751-84f1-e42bd785785d"
+                  name="quan ly san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="957ac464-a437-4ba0-9059-bfc2a0802fb5"
+            isDerived="false"
+            sourceEndRoleName="nhan vien"
+            targetEndRoleName="quan ly don hang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2d871c20-d654-4a07-a11f-6af4720caa2f"
+              LastKnownName="quan ly don hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a86ce16-4d9c-4d2c-8466-fac124ee4b04"
+                  name="nhan vien"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54b3baa4-1650-4a41-9f79-f7bb3f088a4d"
+                  name="quan ly don hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="04e0ebaf-8db5-4e69-b058-b2db573e8ffb"
+        name="khach hang"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cdd77381-7365-4bcc-be67-30c40a09c0e3"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="dang ky"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f6f35bd5-5fbc-4573-b294-48dbb00e7736"
+              LastKnownName="dang ky"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa9a8908-e553-49dc-b33c-8b49f19d2e17"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bf5b334-0ead-49bd-bdc1-c085242ac1dd"
+                  name="dang ky"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6533a833-4693-4c24-a079-2d85935508f2"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="dang nhap"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="696b0feb-3368-4b21-a877-fe227c1b15ee"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dae0b504-c0cd-48a8-8c74-3fed640f0231"
+                  name="dang nhap"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9d05dcb6-83eb-4979-adfe-e2b1756e0d5f"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="doi mat khau"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54d47810-d69b-435f-b2ac-48184c28bf96"
+              LastKnownName="doi mat khau"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b4e8a50-7760-48af-96e9-6027c480c709"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dfcbcbe-50b6-4f01-a59f-1df1b95d14df"
+                  name="doi mat khau"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d26a57c0-e739-47de-9355-b1ee52e99edf"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="tra cuu san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bf42191d-e0c0-42ac-be41-1297d64bb67e"
+              LastKnownName="tra cuu san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="949dbea0-49f4-4f08-964a-5d5dd87173da"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9a4ece7-f7c6-48a4-92b8-a6d3251765d7"
+                  name="tra cuu san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9c639ab7-733f-4d37-a346-fe856c9833ea"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="quan ly gio hang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796"
+              LastKnownName="quan ly gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cdf4f982-9b35-451f-a71e-9adea4936adf"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="980e9a49-19bf-4962-9739-eef2b7f1d263"
+                  name="quan ly gio hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9e7a8531-3bc1-48a0-9c31-4e9c7907e700"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="xem thong tin san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43305f41-0d37-4562-bc13-406a0d4a9309"
+              LastKnownName="xem thong tin san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c8cd811-b1fd-49dc-aa5a-aa032aae43e3"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f5cddb5-3a47-45c2-8055-1bac09918e52"
+                  name="xem thong tin san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aa3c6ead-cf26-4cc4-ac32-b6ccab41178b"
+            isDerived="false"
+            sourceEndRoleName="khach hang"
+            targetEndRoleName="dat hang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="34e308b4-ed68-40a4-a08c-c1fdd1b08add"
+              LastKnownName="dat hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed127128-68dc-4280-8a69-39c8e700ef05"
+                  name="khach hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b17a609d-9dfc-4d3f-a048-0fdf1752fa77"
+                  name="dat hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="566a4fd8-b8e0-48ef-9e33-398a430750e3"
+        name="admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="82b0f283-ba74-45bb-b284-08c437638e04"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="quan ly tai khoan"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+              LastKnownName="quan ly nguoi dung"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78456bc3-2e6f-42c4-a368-cad5d660d49c"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c346cc31-4797-416f-98c0-ed5cc5c39df3"
+                  name="quan ly tai khoan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="14abaeaf-b2c8-4187-a3c5-d1058a58d6f5"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="doi mat khau"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54d47810-d69b-435f-b2ac-48184c28bf96"
+              LastKnownName="doi mat khau"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15bece19-6558-47a6-924c-80221c1abd40"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f60795c3-38a0-47e7-b93e-e3ac4aa7a74e"
+                  name="doi mat khau"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="57eb5e57-f5cb-4e74-bee7-cc9b9560c582"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="quan ly san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="29c7e154-d7f2-40c3-949f-6888eeed5be0"
+              LastKnownName="quan ly san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fcb2dbb2-90fe-412e-b3d6-66728aeef7bd"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37495e84-0231-47b3-b7ba-73f5dd42b2e3"
+                  name="quan ly san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5c1905ad-06b1-431d-b1f7-6938475ccd53"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="quan ly loai san pham"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27aeb025-514c-4d6e-8986-1c6111028285"
+              LastKnownName="quan ly loai san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e4dca30-8f6e-45f4-ad70-cb5af4a118f2"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8ecfddf-ff08-49a1-84b8-58e310540190"
+                  name="quan ly loai san pham"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2b302003-d78e-486e-8b21-505a6f004a5f"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="bao cao / thong ke theo thang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f1a35b82-8577-4023-84c4-e190c6e23aed"
+              LastKnownName="bao cao / thong ke theo thang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26df09b5-769f-4c2a-9629-95613d90b0bd"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d13b503-7781-4532-bfd7-26a38ecfed3f"
+                  name="bao cao / thong ke theo thang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="22e9fadd-28bb-4115-8941-2e54222f08c7"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="dang nhap"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="589472ae-ab0b-4808-880b-886b50e945ee"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2b11538-dd6f-423a-981d-7bc930f4d760"
+                  name="dang nhap"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2d63c7a6-b4c6-408b-af4f-4e290fd4d291"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="quan ly nhom hang"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fea2a055-641e-483e-bb30-a1f948b7359f"
+              LastKnownName="quan ly nhom hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b25cc3ae-7d39-4fc8-850b-843a95aef1e3"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6199470a-7377-4466-bbde-baf1c642ff9d"
+                  name="quan ly nhom hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+        name="dang nhap"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f6f35bd5-5fbc-4573-b294-48dbb00e7736"
+        name="dang ky"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="66b7d377-e980-411e-a1df-311ad84d68f0">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+        name="quan ly nguoi dung"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="dffd437c-08c2-4237-9079-49dc9066504a">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="56b1df99-48b6-4101-810f-d5800c49cac7"
+        name="them tai khoan"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="93c56eb7-3648-405c-9a62-220dc07dc004">
+            <useCaseMoniker
+              Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+              LastKnownName="quan ly nguoi dung"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c0ba914e-f163-4f47-9432-8087fc838a6f"
+        name="xoa tai khoan"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="beb79a05-5d8a-45b0-9def-f0302232e9cb">
+            <useCaseMoniker
+              Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+              LastKnownName="quan ly nguoi dung"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b4f80714-ad91-4351-aa2a-7aa974fb161a"
+        name="sua tai khoan"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="23d99832-4ad6-4780-98ad-73787baf63f5">
+            <useCaseMoniker
+              Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+              LastKnownName="quan ly nguoi dung"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="54d47810-d69b-435f-b2ac-48184c28bf96"
+        name="doi mat khau"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29c7e154-d7f2-40c3-949f-6888eeed5be0"
+        name="quan ly san pham"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fcc1b1fc-4791-473d-912a-4f1ac330a760">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="670cd2e9-c4e8-4ec7-80cd-c4167e1479f3"
+        name="quan ly danh muc"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27aeb025-514c-4d6e-8986-1c6111028285"
+        name="quan ly loai san pham"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6f1e8433-7f09-4b7e-bf7b-fff37a93503f">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1a35b82-8577-4023-84c4-e190c6e23aed"
+        name="bao cao / thong ke theo thang"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="21c9a29a-0a3a-4f7c-ae09-91b28217019a">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="22388462-7595-447b-ba48-c50d6a242c95"
+        name="bao cao theo san pham"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d871c20-d654-4a07-a11f-6af4720caa2f"
+        name="quan ly don hang"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1aeb51f8-8bdd-4f6c-81a4-c76d34377de8">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bf42191d-e0c0-42ac-be41-1297d64bb67e"
+        name="tra cuu san pham"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="ed4ba904-c2a4-4ad8-9b2e-a9a779a62915">
+            <useCaseMoniker
+              Id="40bf26fc-784b-4603-ad50-be0bf7a37317"
+              LastKnownName="Them san pham vao gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+          <extend
+            Id="fc4c1c39-d144-44ee-85f4-776d4ba8ef84">
+            <useCaseMoniker
+              Id="43305f41-0d37-4562-bc13-406a0d4a9309"
+              LastKnownName="xem thong tin san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3fd557dd-e7ad-4270-9812-fe7dcb151f7c"
+        name="thong ke don dat hang"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9297a675-87ee-4b87-a432-87f30c8f273b"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f1a35b82-8577-4023-84c4-e190c6e23aed"
+              LastKnownName="bao cao / thong ke theo thang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6b71ebf4-f061-4925-9022-268428f55326"
+        name="thong ke doanh thu"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="2046a1b0-48f2-4c0e-b015-ace4a4cc289e"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f1a35b82-8577-4023-84c4-e190c6e23aed"
+              LastKnownName="bao cao / thong ke theo thang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7cf26a91-3443-43b6-9f78-8bc1d18fe2cd"
+        name="thong ke so nguoi truy cap"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="794859a9-ac7c-40b3-a181-2d7eae15e520"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f1a35b82-8577-4023-84c4-e190c6e23aed"
+              LastKnownName="bao cao / thong ke theo thang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c3ff239-5f2a-41a3-a9d2-8aae03210abd"
+        name="cap nhat thong tin nguoi dung"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="aedac7f7-8243-4fcd-8816-b002c7acaac4">
+            <useCaseMoniker
+              Id="5c4a612a-6497-4319-aa64-c02fe19aecc4"
+              LastKnownName="quan ly nguoi dung"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="34e308b4-ed68-40a4-a08c-c1fdd1b08add"
+        name="dat hang"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4e75bd3f-2c93-4149-a65d-a4ca35a6c76d">
+            <useCaseMoniker
+              Id="40bf26fc-784b-4603-ad50-be0bf7a37317"
+              LastKnownName="Them san pham vao gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="38c9a409-6455-4151-8f67-7515549a727d">
+            <useCaseMoniker
+              Id="daed01db-ed67-4fd8-a097-6665f74e5dc4"
+              LastKnownName="thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+          <include
+            Id="9be314bd-89f3-40fc-80a9-f9629ec9627e">
+            <useCaseMoniker
+              Id="27ee0ac5-4ddc-4431-8025-dda7a9be8127"
+              LastKnownName="dang nhap"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="daed01db-ed67-4fd8-a097-6665f74e5dc4"
+        name="thanh toan"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03f68595-5695-43db-a865-d389c5d7d0e5"
+        name="thanh toan bang tien mat"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="09f6e877-0dc3-40d5-a551-184953dc4fb8"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="daed01db-ed67-4fd8-a097-6665f74e5dc4"
+              LastKnownName="thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7301435c-b601-4c3d-b851-042e0bfb5bdc"
+        name="thanh toan bang the ngan hang"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d7cc45c2-b7d8-42b6-a063-79f5574dba20"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="daed01db-ed67-4fd8-a097-6665f74e5dc4"
+              LastKnownName="thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="025c73ce-be96-4db7-9a75-5d8d7298c7fa"
+            isDerived="false"
+            sourceEndRoleName="thanh toan bang the ngan hang"
+            targetEndRoleName="ngan hang"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="51fabc08-5475-4715-b55e-4ee27b01bcbd"
+              LastKnownName="ngan hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f53ccfc-cccb-48c8-aa8d-6628c046b84c"
+                  name="thanh toan bang the ngan hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04f8c67f-50e6-4f76-b7f6-1e5ad50a67db"
+                  name="ngan hang"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="51fabc08-5475-4715-b55e-4ee27b01bcbd"
+        name="ngan hang"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796"
+        name="quan ly gio hang"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="40bf26fc-784b-4603-ad50-be0bf7a37317"
+        name="Them san pham vao gio hang"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="894c012b-2343-4b66-bfca-1537a4ee5fb6">
+            <useCaseMoniker
+              Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796"
+              LastKnownName="quan ly gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0290b7b5-2fd6-447b-9247-035ddf6e0541"
+        name="xoa san pham trong gio hang"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="695c39b5-a254-478c-851c-1bb5891aa79e">
+            <useCaseMoniker
+              Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796"
+              LastKnownName="quan ly gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="61c2ffcd-5fa5-4b9a-81a3-8e42af9845ff"
+        name="cap nhat san pham trong gio hang"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9e2d8ca7-a6e7-4aa6-bead-b53e2213843d">
+            <useCaseMoniker
+              Id="bcda916b-8eba-4fa4-96ae-ea3df93f1796"
+              LastKnownName="quan ly gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43305f41-0d37-4562-bc13-406a0d4a9309"
+        name="xem thong tin san pham"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df183456-5ea9-48ba-9858-842b9b4e78cd"
+        name="Khach hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="84c02459-333c-4111-98e6-0aec45f9b61b"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d0a30709-55f7-4281-abe9-29fbd72ce2e9"
+              LastKnownName="tai khoan"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b57e58f-2114-4c2d-a011-e0f07ad3434b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b73acfe-2847-4c36-87e1-7682082ef444"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9ccd4ecd-5a46-42bf-8e2f-471f2b91823b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b1067af9-552d-47c8-b80f-e3b547017a83"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="891c5c27-2713-4464-8d31-6d30cf167d03"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ce066028-8ed4-4515-9fcc-6479e7007be9"
+              LastKnownName="gio hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c525a5b0-ec91-45f9-9a09-359bd31bf593"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e8e7794-6252-403b-8f04-bf863b9e30bb"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="05333e29-665e-4871-b045-beb6843aad03"
+            name="TenKH"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9af7084b-1982-4491-b45a-addc8eb33f0f"
+            name="DiaChi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8d8e09d7-a666-4f3a-82b0-e16aface21ff"
+            name="SDT"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e90de1a6-382a-4193-912e-bcf32384f996"
+            name="tai khoan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="13d61220-85c1-4842-9c65-fdebec4188d9"
+        name="san pham"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="51505632-794a-4235-a530-fa38a9466d11"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="90af64c8-79c5-4c0d-a07e-78e7876960bb"
+              LastKnownName="nhom hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a85fc839-e7af-4674-9c0b-51f7aac20e9e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e8d59e91-6f31-42ff-81df-2853655b3828"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7ae80953-6ac6-46ff-9221-432f1024e1b6"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f91b27b9-e58f-462a-8f43-725256fc136a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d68a1a1c-4ce0-4f3c-9d67-c54fb28e92dd"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0adb3c6f-4e66-4406-baf5-15b398541667"
+              LastKnownName="loai san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75f7549d-9348-4835-a27c-1144487ef220"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f332957a-b052-41c3-989e-2221f4473fb8"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1933398c-3973-40c3-82b4-05cbd21959f9"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1170b9f1-467d-489d-8798-a319b237b6cc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6ee30252-6476-4a59-b88c-c60208589a21"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d4210807-17b5-4268-8cf0-6fd3dc7c147d"
+              LastKnownName="don hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70f4d794-c43d-4ffd-a754-bdf03c78d2c4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fd2b7d25-8f0b-4e05-9dae-59a958be4361"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d0c74c71-87fb-4354-b2d1-7df97a19a68b"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74692e1c-3cb9-40fd-8b51-c3749c896de2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="73330ddf-2caf-42fd-8fd4-9ffa82fb7960"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fa7ec4e1-cbfc-4d74-b0ee-497f01a653b8"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="32243036-dffe-464d-980e-bee452b29886"
+            name="loai san phan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1955b002-2e51-4b03-be34-f1604d9a6ac6"
+            name="ten san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c8f2d11a-19e7-4526-b430-51ff4a2aaab8"
+            name="nhom san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="042321c1-86ad-44b0-acdd-40a8929fafcf"
+            name="mo ta"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ad9a1a26-2135-4986-a4f6-77b511ef7b16"
+            name="so luong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a75d4882-bc66-4d61-ad5f-f9c79f73e9ef"
+            name="don gia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d0a30709-55f7-4281-abe9-29fbd72ce2e9"
+        name="tai khoan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="fcbf3cfd-c5b6-4f4f-86d4-c7536290310f"
+            name="pass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="75703be0-cff8-490d-aa77-0a0d0d752e91"
+            name="khach hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="432dbcc3-fd7b-4cc3-b033-dfccbb47f3a2"
+            name="phan quyen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e510fe3c-b8be-43ea-9efa-4543ecc26562"
+            name="user"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d4210807-17b5-4268-8cf0-6fd3dc7c147d"
+        name="don hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="8b13d26e-e50d-45e4-a5c5-3c091a3d57a8"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ed866c5-3549-406c-99d3-34f306d168ea"
+              LastKnownName="thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13903fe3-4aa8-4e9b-8588-874bbc9d5786"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fee2089-fcea-4e6a-aac1-18e97f23242b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bfc1bbcd-269b-4005-b937-2a1337a59c72"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c31374da-2be4-4af3-98a5-25bb7dcddd04"
+              LastKnownName="hinh thuc thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5a44a53-4404-4922-ac17-9d3e32c4a80b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="05f0e4d8-19a7-46bb-a060-305d58af19db"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7939768f-deff-43c4-9e74-74ae2dbfb318"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95092460-ad4a-41b8-85cb-ee8ce1d15ef6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1e867ce9-195e-4286-a5da-5b22fb04069a"
+            name="ma don hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ce46f081-9936-4f46-8d71-4c8d232918c2"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="363cf14b-0fb4-4c8f-9273-60efd6f24b21"
+            name="hinh thuc thanh toan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d668712b-50e6-45b0-a2dc-6b18b8f719b5"
+        name="chi tiet don hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9346278d-8010-43a1-90c4-0c0b27f37052"
+            name="don hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f2a4e017-70b9-4615-82fd-9c5a635add8a"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2ed10462-d5ed-4c71-a9c6-a0b64b11792a"
+            name="so luong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="64c10770-125b-4a8d-a64b-bec60332ffb5"
+            name="don gia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5bac37be-035a-4aee-986f-d9b8c0344d98"
+            name="ngay giao"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0a8bfe70-b04c-432c-8f3e-c07831444207"
+            name="ngay dat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0adb3c6f-4e66-4406-baf5-15b398541667"
+        name="loai san pham"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="183f9b6e-f961-489e-9d05-82d00a50a431"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="135ed10b-8e68-4fe5-98e2-0d7981d5fcf1"
+            name="thong tin loai san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5ed866c5-3549-406c-99d3-34f306d168ea"
+        name="thanh toan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="24335d77-a4d7-49fe-9066-fbb8ebd708a4"
+            name="don hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe832caf-653c-4782-86dd-db9c839bc23d"
+            name="hinh thuc thanh toan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="77d678e9-9dda-4844-bdb2-27a51e1b855a"
+        name="phan quyen"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="77add9e4-4afb-4c46-9b9f-ca78ad5a3880"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d0a30709-55f7-4281-abe9-29fbd72ce2e9"
+              LastKnownName="tai khoan"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45114d37-d8de-4085-8b08-9b31a4016642"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="558d72ff-20b2-4938-a458-03244b05fdff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4d2f2384-b116-49a7-92c9-f26c832a0ca3"
+            name="ma phan quyen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="55f0d6ae-6e90-474d-8b0c-87e0ff298d02"
+            name="loai quyen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90af64c8-79c5-4c0d-a07e-78e7876960bb"
+        name="nhom hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0544d13d-e97f-439b-b3da-42d5b93795d8"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3ceacdcd-088a-4e31-8fcc-b8f058e989f0"
+            name="thong tin nhom hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fea2a055-641e-483e-bb30-a1f948b7359f"
+        name="quan ly nhom hang"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b696611-219b-432c-ba09-ca7d016c467d"
+        name="thong ke doanh thu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="63d1af5c-364c-4488-aa7e-933e7f742144">
+            <classMoniker
+              Id="d4210807-17b5-4268-8cf0-6fd3dc7c147d"
+              LastKnownName="don hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5da2132e-491c-427d-b202-38c015d81f89"
+            name="thang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce066028-8ed4-4515-9fcc-6479e7007be9"
+        name="gio hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1b99309e-c3bd-4588-960a-e2cb0d3d0ed1"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="13d61220-85c1-4842-9c65-fdebec4188d9"
+              LastKnownName="san pham"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da4accf6-5cae-4df3-9956-e78428832a3e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1921e593-56a1-4279-af14-6c7a777521bc"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d39a451a-f455-48f9-b974-70dc63ed1bbb"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc18b66c-9e00-4533-84c7-f51a335e8f2c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="623140f8-f9d0-4f7e-b38f-f413066ea03e"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d886ef38-d0dd-4cdd-a44b-c85e6fd7b799"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="13f6930b-0a12-450c-bedc-682647718583"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0651797b-0c58-4dce-b767-42523421aee6"
+            name="so luong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="369c13ef-ffa3-449a-a044-d0acdc9caa96"
+            name="thanh tien"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a232f9c1-36e1-48b5-b0a5-515697cacccd"
+        name="thong ke dat hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4059586c-5658-42c4-9c0c-38d560284954">
+            <classMoniker
+              Id="d4210807-17b5-4268-8cf0-6fd3dc7c147d"
+              LastKnownName="don hang"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f89c4173-dcf8-4c94-9f6b-369a1496cdda"
+            name="don hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4b96493-3607-4847-a4d4-50f340058f3d"
+        name="thong ke so nguoi truy cap"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="bdcb5028-9185-4997-9433-db3382a646ea">
+            <classMoniker
+              Id="d0a30709-55f7-4281-abe9-29fbd72ce2e9"
+              LastKnownName="tai khoan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0303f4e4-6078-4c4f-ba32-fdcb7e07a3f2"
+            name="so luong truy cap"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c31374da-2be4-4af3-98a5-25bb7dcddd04"
+        name="hinh thuc thanh toan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f234d7ee-299d-40fc-b49f-6730f2c9759c"
+        name="thanh toan bang tien mat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="01e89bc1-2cc3-4223-b306-9da48b0974f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c31374da-2be4-4af3-98a5-25bb7dcddd04"
+              LastKnownName="hinh thuc thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8cccc1db-0fdf-454f-ab08-cd9fdcdcde7a"
+        name="thanh toan bang ngan hang"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4bc6e16d-7215-4533-ad7a-cfe66ff274a9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c31374da-2be4-4af3-98a5-25bb7dcddd04"
+              LastKnownName="hinh thuc thanh toan"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2fb668f3-d2c7-440d-a42b-4aefb8db8d9d"
+        name="Khach hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="98489286-2d42-4775-a37b-a9d77add826a"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
+              LastKnownName="tai khoan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d377426-62d9-4cc8-a672-8f75624b6108"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89d72086-33b8-46fd-81cf-358e12727a8f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="88fcd30e-2dc5-4529-bb93-5fd8fe8bb392"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="370c363d-3e73-43c0-a9b3-7a35cf63a922"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="39ad1cbc-bfaf-403e-bfe8-0b259707dc1e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b61d3d5f-d8c5-4d4c-ac7e-9e54fa9c5ee6"
+              LastKnownName="gio hang1"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="060c53c9-ece0-4a87-966c-b8e0ef2d78d7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8bef8e3f-cb02-46f6-8371-e02fb748d059"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8eca9305-ce85-411e-9279-ac8b06f94ba3"
+            name="TenKH"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fa423e46-f7d3-4d9c-ba2a-e524f5242117"
+            name="DiaChi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="798fd84c-f06a-4e0e-8be7-cea63784706c"
+            name="SDT"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="511d4353-64c3-47fd-9492-d2dfbc39b280"
+            name="mataikhoan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5027482c-f28e-43fc-816a-b2b73e28decb"
+            name="maKH"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
+        name="san pham1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5d757486-39f3-41a0-8401-93845ab3fb9c">
+            <classMoniker
+              Id="a9ad036a-4d71-4b65-850f-795b190acc10"
+              LastKnownName="loai san pham1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+          <dependency
+            Id="75611bab-1ae2-4c92-a4cd-f4240e2a4ab3">
+            <classMoniker
+              Id="141bebdf-ee8a-4851-8bba-9e48f30a6507"
+              LastKnownName="nhom hang1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="68fbf6ba-8cfd-4a93-ad95-a4e50b39541c"
+            name="maloai"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ac57fa24-e958-4669-8fee-dae2b5547cee"
+            name="tensanpham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="28a4a3fb-5d99-4f83-951c-322a5437c829"
+            name="manhomhang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70987cfc-c0b1-41cc-8e00-d97abc44af68"
+            name="mota"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c67e6af9-c7ef-4e65-9bbb-31f34eaf116e"
+            name="soluong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb3f363f-83ca-446f-aa88-391fdd2a95a1"
+            name="dongia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b5d0879a-67af-4520-90ac-fcb112805f1b"
+            name="maSP"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
+        name="tai khoan1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1a581c76-2db1-42ef-83ba-e09a99b05338"
+            name="pass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="07871c6e-a641-4935-8abb-9e00eb9c9ab2"
+            name="maphanquyen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="56caa6b6-3ad6-4431-8fcc-3bdc1b2db6b3"
+            name="user"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0613477f-95e2-41ce-8d89-3e25afb692ad"
+            name="matk"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4c12a4c3-9cca-4f71-9145-a99d80529302"
+            name="DiaChi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c3421aad-aa08-4010-9003-af10ec08f63f"
+            name="SDT"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="18cb9a62-eb0c-488f-89d0-f0f6ea54d0b6"
+            name="Tennguoidung"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6e232789-a910-4f66-b933-e14c8ef58997"
+        name="don hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="27bc5fef-4cd0-44a9-b963-61a10dc310b3">
+            <classMoniker
+              Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
+              LastKnownName="hinh thuc thanh toan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="adfef54d-be70-499c-8396-eebee64cd9fe"
+            name="masanpham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ed020f5a-b45d-46db-9fe3-e165964ae8bf"
+            name="mathanhtoan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="14eacc20-0987-4bff-8fe5-969e36f863a0"
+            name="madonhang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ca2dfa49-abee-47b6-81ff-da53f039e0b5"
+        name="chi tiet don hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="478344ad-c5ab-479b-bad4-04a4d323ff5f">
+            <classMoniker
+              Id="6e232789-a910-4f66-b933-e14c8ef58997"
+              LastKnownName="don hang1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+          <dependency
+            Id="a9cf0a9e-5d06-4143-8121-ddf434fefab9">
+            <classMoniker
+              Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
+              LastKnownName="san pham1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f9c4fd60-9fb1-4c9b-8e75-1efd095a1078"
+            name="masanpham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b2468a90-1485-40a8-ad5c-bcd4c41e4df5"
+            name="soluong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="73294a18-6543-4863-a9f8-cd3b669542c1"
+            name="dongia"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6ffeeeef-86e9-4a38-9802-bf6de1f980d3"
+            name="ngaygiaohang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="add8394a-7681-4387-826a-8dd59efb50c5"
+            name="ngaydathang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="236209c5-91fb-4da4-9617-457679957c05"
+            name="madonhang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a9ad036a-4d71-4b65-850f-795b190acc10"
+        name="loai san pham1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="34e72033-094e-41e5-9e68-8e65cd799cac"
+            name="maloai"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9a8cbda3-e75a-4508-ab29-5ac8cd333f80"
+            name="tenloai"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d0af79a-7ffc-455b-a857-d9abbcc54177"
+        name="phan quyen1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b08355e0-b3eb-4b37-8123-28d9d3e49577">
+            <classMoniker
+              Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
+              LastKnownName="tai khoan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a1228155-d084-4110-bc0e-b154bc6c1457"
+            name="tenphanquyen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c41ce0e0-067a-4d2c-af3b-1886403102b8"
+            name="maphanquyen"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="141bebdf-ee8a-4851-8bba-9e48f30a6507"
+        name="nhom hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="44cd2d04-1015-489a-841c-cf6ad29bc686"
+            name="manhom"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a24db422-d14d-4df6-9b80-7ee1a156e3dc"
+            name="tennhom"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bc31c21c-9ff4-480b-ae47-af82660980a2"
+        name="thongkedoanhthu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a0ca6a85-ae72-4b8c-88ec-a2f5bb203840">
+            <classMoniker
+              Id="6e232789-a910-4f66-b933-e14c8ef58997"
+              LastKnownName="don hang1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a58a401f-0945-4aed-ab6c-5b623f60bcf8"
+            name="mabaocao"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="75841621-fa67-43d2-bb2a-44daaa78f697"
+            name="thang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="50a3eba8-e548-4358-8bac-071e81570b6b"
+            name="madonhang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e4ca5aad-0a40-4235-bd80-75286f2eb28b"
+            name="soluong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7940c97e-f865-410c-9aba-ce0aab98d9bd"
+            name="dongia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b61d3d5f-d8c5-4d4c-ac7e-9e54fa9c5ee6"
+        name="gio hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2ae56101-e67e-4122-9313-2724318b0a87"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
+              LastKnownName="san pham1"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1996f870-0361-4c23-9262-3843e66cfbbe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7cd0c9e8-3dd7-4033-9669-bd4e295cf5b7"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c6e3e792-0966-4b88-b4dc-a419d43ac331"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c01caf6-6e15-41cd-b19d-3907238c56d9"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="44667246-12fa-483b-8528-6c2d365ebd74"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8506162b-0f5b-4bb8-a2e6-37a0c3db0e74"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="66d75a62-bb78-4d01-b415-02c2cf5a9002"
+            name="san pham"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="df075829-5946-47d7-845c-33c0fdb242bb"
+            name="so luong"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="40eddaa0-c97b-423b-a282-e228157ccc4f"
+            name="thanh tien"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="83803775-e760-4c03-b2c2-4d03d97c7590"
+        name="thong ke dat hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6b426fa7-ed40-444b-b729-02281d4c6244">
+            <classMoniker
+              Id="6e232789-a910-4f66-b933-e14c8ef58997"
+              LastKnownName="don hang1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="6e197647-5360-44e4-a2b2-9b12b8d016b3"
+            name="don hang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="43218d95-cca7-4d81-8d18-919f45f1ee73"
+        name="thong ke so nguoi truy cap"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5f40d1b1-9c38-466e-853c-808ef13f70e0">
+            <classMoniker
+              Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
+              LastKnownName="tai khoan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="307a6052-6a25-4e1f-9997-2c773498a9d7"
+            name="soluongtruycap"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bc2a10b0-4613-483a-9a55-78a3e55be317"
+            name="mabaocao"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
+        name="hinh thuc thanh toan1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="00de3ff6-a6e2-43fd-af47-743800c975bf"
+            name="mathanhtoan"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="59faa64c-72f8-436b-91bd-655c1f91f3dd"
+            name="tenthanhtoan"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="def774a3-92bc-4a4a-9148-a91b1e763ad2"
+        name="thanh toan bang tien mat1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a18ebab5-3bb9-4fc9-99fb-3bdb56bf90f2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
+              LastKnownName="hinh thuc thanh toan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a9c3c5d8-42ea-4e6b-8c73-3bf7dfe1ae27"
+        name="thanh toan bang ngan hang1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b9edb6f2-072b-4cb1-9467-8db020790591"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
+              LastKnownName="hinh thuc thanh toan1"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb7948a8-31fe-4324-bfff-e174210f2aac"
+        name="thanhtoan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c6be063a-5cb7-4d4b-9a28-23a7ce1cc63c"
+        name="BangThamSo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0a4d55fc-2e10-48fc-ba4f-4a65d4531ef1"
+            name="MaThamSo"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f6c246f8-0f81-4671-a8a0-453cc0e948b3"
+            name="Ten"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5699042e-122d-4bbb-809e-ec630c3412ae"
+            name="Kieu"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1d0736fa-d879-4b87-93d0-b10da21979e7"
+            name="TinhTrang"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="58b71549-ff4c-47ed-9ea4-de6bf6ce5315"
+            name="GiaTri"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
