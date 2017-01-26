@@ -1,0 +1,93 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="js/sanpham.js"></script>
+	<!-- <script type="text/javascript" src="lib/nav.js"></script> -->
+</head>
+<body ng-app="myApp">
+	<!--header-->
+	<div data-ng-include="'header.html'"></div>
+	<div class="banner-mat">
+		<div class="container">
+			<div class="banner">
+
+				<!-- Slideshow 4 -->
+				<div class="slider">
+					<ul class="rslides" id="slider1">
+						<li><img src="images/banner.jpg" alt="">
+						</li>
+						<li><img src="images/banner1.jpg" alt="">
+						</li>
+						<li><img src="images/banner.jpg" alt="">
+						</li>
+						<li><img src="images/banner2.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+
+				<div class="banner-bottom">
+					<div class="banner-matter">
+						<p>Childish Gambino - Camp Now Available for just $9.99</p>
+						<a href="single.html" class="hvr-shutter-in-vertical ">Purchase</a>
+					</div>
+					<div class="purchase">
+						<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">Purchase</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- //slider-->
+		</div>
+	</div>
+	<!---->
+	<div class="container">
+		<div class="content">
+			<div class="content-top" ng-controller="enventCtrl" ng-init='getEventNew()'>
+				<h3 class="future">FEATURED</h3>
+
+				<div class="content-top-in">
+
+					<!-- get hot list sanpham -->
+					<div class="col-md-3 md-col"  ng-repeat='sp in sanpham'>
+						<div class=" top-products">
+							<div class="col-md">
+								<a href="single.html"><img  src="images/pi.jpg" alt="" /></a>
+								<div class="top-content">
+									<h5><a href="single.html">{{sp.ten_sp}}</a></h5>
+									<div class="white">
+										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">ADD TO CART</a>
+										<p class="dollar"><span class="in-dollar">$</span><span>{{sp.gia}}</span></p>
+										<div class="clearfix"></div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!---->
+
+			<!---->
+
+					<!---->
+					<div data-ng-include="'footer.html'"></div>
+				</body>
+				</html>

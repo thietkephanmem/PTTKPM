@@ -1,8 +1,61 @@
 
 <div class="header">
+	<script type="text/javascript">
+
+	var ww = document.body.clientWidth;
+
+	$(document).ready(function() {
+		$(".nav li a").each(function() {
+			if ($(this).next().length > 0) {
+				$(this).addClass("parent");
+			};
+		})
+
+		$(".toggleMenu").click(function(e) {
+			e.preventDefault();
+			$(this).toggleClass("active");
+			$(".nav").toggle();
+		});
+		adjustMenu();
+	})
+
+	$(window).bind('resize orientationchange', function() {
+		ww = document.body.clientWidth;
+		adjustMenu();
+	});
+
+	var adjustMenu = function() {
+		if (ww < 768) {
+			$(".toggleMenu").css("display", "inline-block");
+			if (!$(".toggleMenu").hasClass("active")) {
+				$(".nav").hide();
+			} else {
+				$(".nav").show();
+			}
+			$(".nav li").unbind('mouseenter mouseleave');
+			$(".nav li a.parent").unbind('click').bind('click', function(e) {
+				// must be attached to anchor element to prevent bubbling
+				e.preventDefault();
+				$(this).parent("li").toggleClass("hover");
+			});
+		}
+		else if (ww >= 768) {
+			$(".toggleMenu").css("display", "none");
+			$(".nav").show();
+			$(".nav li").removeClass("hover");
+			$(".nav li a").unbind('click');
+			$(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+				// must be attached to li so that mouseleave is not triggered when hover over submenu
+				$(this).toggleClass('hover');
+			});
+		}
+	}
+
+
+	</script>
 		<div class="header-top">
-			<div class="container">	
-			<div class="header-top-in">			
+			<div class="container">
+			<div class="header-top-in">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" alt=" " ></a>
 				</div>
@@ -11,7 +64,7 @@
 							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
 							<li  ><a href="account.html">  MY ACCOUNT</a></li>
 							<li ><a href="#" > SHOPPING CART</a></li>
-							<li > <a href="checkout.html" >CHECKOUT</a> </li>	
+							<li > <a href="checkout.html" >CHECKOUT</a> </li>
 							<li><div class="cart">
 									<a href="#" class="cart-in"> </a>
 									<span> 0</span>
@@ -21,7 +74,7 @@
 						  <div class="shopping_cart">
 							  <div class="cart_box">
 							   	 <div class="message">
-							   	     <div class="alert-close"> </div> 
+							   	     <div class="alert-close"> </div>
 					                <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""></div>
 								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
 		                             $12.00</span></div>
@@ -30,7 +83,7 @@
 	                            </div>
 	                            <div class="cart_box1">
 								  <div class="message1">
-							   	     <div class="alert-close1"> </div> 
+							   	     <div class="alert-close1"> </div>
 					                <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""></div>
 								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
 		                             $12.00</span></div>
@@ -71,16 +124,17 @@
 							<li><a href="products.html">HP(78)</a></li>
 							<li><a href="products.html">Intel(5)</a></li>
 						</ul>
-						</li> 						
-						<li><a href="products.html" >  Tablets</a></li>            
-						<li><a href="products.html" >Components</a></li>						  				 
+						</li>
+						<li><a href="products.html" >  Tablets</a></li>
+						<li><a href="products.html" >Components</a></li>
 						<li><a href="products.html" >Software</a></li>
 						<li><a href="products.html" >Phones & PDAs </a></li>
 						<li><a href="products.html" >  Cameras  </a></li>
 						<li><a href="contact.html" >Contact </a></li>
-					
+
 				</ul>
-				<script type="text/javascript" src="js/nav.js"></script>
+
+				<!-- test -->
 			</div>
 		</div>
 		</div>
@@ -92,10 +146,10 @@
 				<ul class="social-in">
 						<li><a href="#"><i> </i></a></li>
 						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>					
+						<li><a href="#"><i class="twitter"> </i></a></li>
 						<li><a href="#"><i class="skype"> </i></a></li>
-					</ul>	
-					<div class="down-top">		
+					</ul>
+					<div class="down-top">
 							<select class="in-drop">
 							  <option value="Dollars" class="in-of">Dollars</option>
 							  <option value="Euro" class="in-of">Euro</option>
@@ -116,4 +170,3 @@
 		</div>
 		</div>
 	</div>
-	
