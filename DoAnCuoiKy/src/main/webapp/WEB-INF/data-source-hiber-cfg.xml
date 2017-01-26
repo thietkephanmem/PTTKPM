@@ -21,6 +21,7 @@
           <list>
          	  <value>model.NhaSanXuatDTO</value>
               <value>model.PhanQuyenDTO</value>
+              <value>model.SanPhamDTO</value>
           </list>
       </property>
  
