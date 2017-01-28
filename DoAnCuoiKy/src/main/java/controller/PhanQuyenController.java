@@ -30,7 +30,7 @@ public class PhanQuyenController {
 		this.phanQuyenService = phanQuyenService;
 	}
 	
-	@RequestMapping(value ="/test4", method = RequestMethod.POST)
+	@RequestMapping(value ="/phanquyen/list", method = RequestMethod.POST)
 	public @ResponseBody String getlist() 
 	{
 		List<PhanQuyenDTO> list = new  ArrayList<PhanQuyenDTO>();

@@ -26,6 +26,7 @@ public class NhaSanXuatController {
 	public NhaSanXuatService getNhaSanXuatService() {
 		return nhaSanXuatService;
 	}
+	
 	@Autowired
 	public void setNhaSanXuatService(NhaSanXuatService nhaSanXuatService) {
 		this.nhaSanXuatService = nhaSanXuatService;

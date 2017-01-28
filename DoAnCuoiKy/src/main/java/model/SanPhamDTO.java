@@ -4,9 +4,12 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity(name="sanpham")
 public class SanPhamDTO {
@@ -26,8 +29,10 @@ public class SanPhamDTO {
 	private Double gia;
 	@Column(name="soluong")
 	private Integer soluong;
-	@Column(name="ma_loai")
-	private Integer ma_loai;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "ma_loai", nullable = false)
+	//@Column(name="ma_loai");
+	private LoaiSPDTO ma_loai;
 	@Column(name="hinh_anh")
 	private String hinh_anh;
 	@Column(name="ngay_nhap")
@@ -36,8 +41,11 @@ public class SanPhamDTO {
 	private String mo_ta;
 	@Column(name="trang_thai")
 	private String trang_thai;
-	@Column(name="nha_sx")
-	private Integer nha_sx;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "nha_sx", nullable = false)
+//	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	//@Column(name="nha_sx")
+	private NhaSanXuatDTO nha_sx;
 	
 	
 	
@@ -77,10 +85,10 @@ public class SanPhamDTO {
 	public void setSoluong(Integer soluong) {
 		this.soluong = soluong;
 	}
-	public Integer getMa_loai() {
+	public LoaiSPDTO getMa_loai() {
 		return ma_loai;
 	}
-	public void setMa_loai(Integer ma_loai) {
+	public void setMa_loai(LoaiSPDTO ma_loai) {
 		this.ma_loai = ma_loai;
 	}
 	public String getHinh_anh() {
@@ -107,10 +115,10 @@ public class SanPhamDTO {
 	public void setTrang_thai(String trang_thai) {
 		this.trang_thai = trang_thai;
 	}
-	public Integer getNha_sx() {
+	public NhaSanXuatDTO getNha_sx() {
 		return nha_sx;
 	}
-	public void setNha_sx(Integer nha_sx) {
+	public void setNha_sx(NhaSanXuatDTO nha_sx) {
 		this.nha_sx = nha_sx;
 	}
 	
