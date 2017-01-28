@@ -1,11 +1,11 @@
-/*--A Design by W3layouts 
+/*--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
-	background: #fff ;		
+	background: #fff ;
 	font-family: 'Exo', sans-serif;
 }
 body a{
@@ -20,7 +20,7 @@ body a{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 .header-top{
 	background:#fb5e33;
@@ -118,7 +118,7 @@ ul.social-in{
 	margin-top: 0.5em;
 }
 ul.social-in li{
-	display: inline-block;	
+	display: inline-block;
 }
 ul.social-in li  i{
 	background: url(../images/img-sprite.png)no-repeat -13px -11px ;
@@ -224,12 +224,12 @@ ul.icon1{
 	-moz-border-top-left-radius: 5px;
 	-o-border-top-left-radius: 5px;
 }
-.icon1 ul li:last-child {   
+.icon1 ul li:last-child {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	box-shadow: none;    
+	box-shadow: none;
 }
-.icon1 ul a {    
+.icon1 ul a {
 	_height: 10px; /*IE6 only*/
 	white-space: nowrap;
 	float: none;
@@ -251,7 +251,7 @@ ul.icon1{
 	left: -100px;
 	top: 0%;
 	margin-top: -6px;
-	border-left: 0;	
+	border-left: 0;
 	border-bottom:20px solid transparent;
 	border-top: 20px solid transparent;
 	border-right:20px solid #323757;
@@ -351,7 +351,7 @@ span.actual{
 	text-decoration:none;
     border: none;
 	cursor: pointer;
-	padding:8px 10px !important; 
+	padding:8px 10px !important;
 	display: inline-block;
 	outline: none;
 	-webkit-transition: all 0.3s;
@@ -376,8 +376,8 @@ select.in-drop {
 	width: 94%;
 	font-size: 0.9em;
 	padding: 3px;
-	border-top: 1px solid #DADADA;	
-	border-left: 1px solid #DADADA;	
+	border-top: 1px solid #DADADA;
+	border-left: 1px solid #DADADA;
 	border-bottom:none;
 	border-right:none;
 }
@@ -388,8 +388,8 @@ select.in-drop option {
 	float:left;
 	position:relative;
 	width:47%;
-	border-top: 1px solid #DADADA;	
-	border-left: 1px solid #DADADA;	
+	border-top: 1px solid #DADADA;
+	border-left: 1px solid #DADADA;
 	background: #fff;
 	border-radius: 4px;
 }
@@ -400,9 +400,9 @@ select.in-drop option {
 	width: 91%;
 	border: none;
 	font-size:0.8em;
-	color:#4c4c4c;	
+	color:#4c4c4c;
 }
-.search input[type="submit"] {	
+.search input[type="submit"] {
 	width: 15px;
 	height: 15px;
 	background:url(../images/search.png) 0px 0px no-repeat;
@@ -428,8 +428,8 @@ select.in-drop option {
 }
 .nav:before,
 .nav:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 .nav:after {
     clear: both;
@@ -468,12 +468,12 @@ select.in-drop option {
 	background: -o-linear-gradient(top, rgba(242,230,188,1) 1%,rgba(251,242,211,1) 100%);
 	background: -ms-linear-gradient(top, rgba(242,230,188,1) 1%,rgba(251,242,211,1) 100%);
 	background: linear-gradient(to bottom, rgba(242,230,188,1) 1%,rgba(251,242,211,1) 100%);
-	padding:1.93em;	
+	padding:1.93em;
 }
 .nav li {
     position: relative;
 }
-.nav li.active{	
+.nav li.active{
 	padding:1.93em;
 	background: rgb(242,230,188);
 	background: -moz-linear-gradient(top, rgba(242,230,188,1) 1%, rgba(251,242,211,1) 100%);
@@ -694,7 +694,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	border-bottom:7px solid #8dcac8;
 }
 .banner-matter{
-	float:right;	
+	float:right;
 }
 .banner-matter p{
 	font-size:1em;
@@ -736,7 +736,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	border-radius:5px;
 	float:left;
 }
-.hvr-shutter-in-vertical2{	
+.hvr-shutter-in-vertical2{
 	background: rgb(157,218,216);
 	background: -moz-linear-gradient(top, rgba(157,218,216,1) 52%, rgba(119,168,164,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(52%,rgba(157,218,216,1)), color-stop(100%,rgba(119,168,164,1)));
@@ -744,7 +744,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	background: -o-linear-gradient(top, rgba(157,218,216,1) 52%,rgba(119,168,164,1) 100%);
 	background: -ms-linear-gradient(top, rgba(157,218,216,1) 52%,rgba(119,168,164,1) 100%);
 	background: linear-gradient(to bottom, rgba(157,218,216,1) 52%,rgba(119,168,164,1) 100%);
-	
+
 	line-height:1.3em;
 }
 .hvr-shutter-in-vertical:before {
@@ -799,7 +799,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	font-size:1.3em;
 	padding:0 1em;
 }
- h3.future:after{ 
+ h3.future:after{
 	content: "";
 	background: url(../images/line.png)0px 0px;
 	width: 91%;
@@ -894,7 +894,7 @@ p.dollar span.in-dollar{
 }
 .nbs-flexisel-item > img {
 	cursor: pointer;
-	position: relative;	
+	position: relative;
 }
 /*---- Navigation ---*/
 .nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
@@ -930,7 +930,7 @@ h2.products-in{
 	font-size:1.3em;
 	padding:0 1em 2em;
 }
-h2.products-in:after{ 
+h2.products-in:after{
 	content: "";
 	background: url(../images/line.png)0px 0px;
 	width: 91%;
@@ -1010,13 +1010,13 @@ a.cart-to{
 	font-size:1.4em;
 	border-bottom:1px solid #747272;
 	border-top:1px solid #747272;
-	padding:0.5em 0; 
+	padding:0.5em 0;
 }
 .single-para p{
 	color:#747272;
 	font-size:0.9em;
 	line-height:1.8em;
-	padding:1.5em 0; 
+	padding:1.5em 0;
 }
 .single-bottom h4{
 	color:#747272;
@@ -1067,7 +1067,7 @@ a.cart-to{
 }
 .available {
   padding: 2em 0 1em;
-  
+
 }
 .top-in-single{
 	padding:0;
@@ -1109,7 +1109,7 @@ h2.contact-in{
 	font-size:1.3em;
 	padding:0 1em 2em;
 }
-h2.contact-in:after{ 
+h2.contact-in:after{
 	content: "";
 	background: url(../images/line.png)0px 0px;
 	width: 91%;
@@ -1253,7 +1253,7 @@ h2.account-in{
 	font-size:1.3em;
 	padding:0 0em 2em;
 }
-h2.account-in:after{ 
+h2.account-in:after{
 	content: "";
 	background: url(../images/line.png)0px 0px;
 	width: 92%;
@@ -1289,11 +1289,11 @@ span.word{
 	-ms-border-radius: 10px;
 	outline:none;
 	color:#464646;
-	font-size:1em;	
+	font-size:1em;
 }
 .account textarea{
 	resize:none;
-	height:60px;		
+	height:60px;
 }
 .account input[type="submit"]{
 	background: rgb(252,94,53);
@@ -1391,7 +1391,7 @@ ul.start li a i{
 	width: 36px;
 	height: 36px;
 	display:inline-block;
-	vertical-align:middle;	
+	vertical-align:middle;
 }
 ul.start li a i.next {
 	background-position:-136px -54px;
@@ -1427,7 +1427,7 @@ ul.start li a i.next {
 	font-size:0.9em;
 	line-height:1.8em;
 	padding: 0.3em 0 0 2.1em;
-	
+
 }
 /*----*/
 .footer-middle{
@@ -1811,7 +1811,7 @@ h2.products-in:after{
 }
 p.dollar{
 	display:none;
-}  
+}
 .content-top-in {
   padding: 1em 0;
 }
@@ -1958,4 +1958,19 @@ h2.contact-in,h2.products-in {
 }
 .contact-top input[type="submit"]{
 	width:30%;
+}
+/*css slide show*/
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
 }

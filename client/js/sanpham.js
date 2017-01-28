@@ -1,26 +1,20 @@
-var myApp = angular.module('myApp', []);
-myApp.controller('enventCtrl', function($scope, $http) {
+var myApp = angular.module('myApp',  ['ui.bootstrap']);
+myApp.controller('enventCtrl', function($scope, $http,$rootScope) {
 
-        	$scope.getEventNew = function() {
-            // $scope.R_date = function ( date){
-            //
-            //     var datesql = new Date(date.substr(0, 4), date.substr(5, 2)-1 , date.substr(8, 2)) ;
-            //     $scope.fulldate =datesql;
-            //
-            // };
+  $scope.getEventNew = function() {
 
-            $http.get("http://localhost:8080/DoAnCuoiKy/sanpham/list")
-            .then(function(response) {
-                //console.log($filter('date')(new Date(), 'yyyy-MM-dd'));
-                $scope.sanpham = response.data;
-                console.log($scope.sanpham);
-                // for (var i = 0; i < response.data.length; i++) {
-                    // var datesql = new Date(response.data[i].startDate);
-                    // var datesql= response.data[i].startDate;
-                    // var datesystem = new Date();
-                   // console.log(datesqlA);
 
-                // }
-            });
-        };
-        });
+
+    $http.get("http://localhost:8080/DoAnCuoiKy/sanpham/list")
+    .then(function(response) {
+      $scope.myInterval = 1000;
+      $rootScope.sanpham = response.data;
+      //console.log($scope.sanpham);
+
+    });
+  };
+
+// console.log(  $rootScope.sanpham );
+ // Initializing  slide rray
+
+});

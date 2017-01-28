@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-
+<!-- <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"> -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -15,9 +15,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="lib/jquery.min.js"></script>
 	<script src="lib/bootstrap.min.js"></script>
 	<script src="js/sanpham.js"></script>
+
+	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
+
 	<!-- <script type="text/javascript" src="lib/nav.js"></script> -->
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp"  ng-controller="enventCtrl" ng-init='getEventNew()'>
 	<!--header-->
 	<div data-ng-include="'header.html'"></div>
 	<div class="banner-mat">
@@ -25,46 +28,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="banner">
 
 				<!-- Slideshow 4 -->
-				<div class="slider">
-					<ul class="rslides" id="slider1">
-						<li><img src="images/banner.jpg" alt="">
-						</li>
-						<li><img src="images/banner1.jpg" alt="">
-						</li>
-						<li><img src="images/banner.jpg" alt="">
-						</li>
-						<li><img src="images/banner2.jpg" alt="">
-						</li>
-					</ul>
-				</div>
+				<div class="container">
+                <div class="offsetspan6">
+                     <carousel interval="myInterval">
+                          <slide ng-repeat="slide in sanpham" active="slide.active">
+                                <img class="image-circle" ng-src="images/{{slide.hinh_anh}}"    style="margin:auto;"/>
+                         <div class="carousel-caption">
+                             <h4>Slide {{$index}}</h4>
 
-				<div class="banner-bottom">
-					<div class="banner-matter">
-						<p>Childish Gambino - Camp Now Available for just $9.99</p>
-						<a href="single.html" class="hvr-shutter-in-vertical ">Purchase</a>
-					</div>
-					<div class="purchase">
-						<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">Purchase</a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
+                       </div>
+                       </slide>
+                </carousel>
+          </div>
+     </div>
 			<!-- //slider-->
 		</div>
 	</div>
 	<!---->
 	<div class="container">
 		<div class="content">
-			<div class="content-top" ng-controller="enventCtrl" ng-init='getEventNew()'>
+			<div class="content-top">
 				<h3 class="future">FEATURED</h3>
 
 				<div class="content-top-in">
 
 					<!-- get hot list sanpham -->
+					<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
 					<div class="col-md-3 md-col"  ng-repeat='sp in sanpham'>
 						<div class=" top-products">
 							<div class="col-md">
-								<a href="single.html"><img  src="images/pi.jpg" alt="" /></a>
+								<a href="single.html"><img  src="images/{{sp.hinh_anh}}" alt="" /></a>
 								<div class="top-content">
 									<h5><a href="single.html">{{sp.ten_sp}}</a></h5>
 									<div class="white">
