@@ -24,5 +24,10 @@ public class PhanQuyenServiceImpl implements PhanQuyenService {
 		
 		return dao.getAll();
 	}
+	@Override
+	public void PhanQuyenCreate(PhanQuyenDTO pq) {
+		dao.createPhanQuyen(pq);
+		
+	}
 
 }

@@ -7,7 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name="phanquyen")
-public class PhanQuyenDTO {
+
+public class PhanQuyenDTO  {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -35,6 +36,6 @@ public class PhanQuyenDTO {
 	public void setMo_ta(String mo_ta) {
 		this.mo_ta = mo_ta;
 	}
-
+	
 	
 }

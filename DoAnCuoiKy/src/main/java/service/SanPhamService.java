@@ -7,5 +7,6 @@ import model.SanPhamDTO;
 public interface SanPhamService {
 	
 	public List<SanPhamDTO> getAllSanPham();
+	public void createSP(SanPhamDTO sp);
 
 }

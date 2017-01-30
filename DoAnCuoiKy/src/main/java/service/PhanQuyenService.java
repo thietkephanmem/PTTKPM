@@ -7,5 +7,6 @@ import model.PhanQuyenDTO;
 public interface PhanQuyenService {
 	
 	public List<PhanQuyenDTO> getAll();
+	public void PhanQuyenCreate(PhanQuyenDTO pq);
 
 }

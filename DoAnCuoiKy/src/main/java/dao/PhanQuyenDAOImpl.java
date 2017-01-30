@@ -42,4 +42,22 @@ public class PhanQuyenDAOImpl implements PhanQuyenDAO {
 		}
 	}
 
+	@Override
+	public void createPhanQuyen(PhanQuyenDTO pq) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+			
+
+			session.saveOrUpdate(pq);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+			
+		}
+	}
+
 }

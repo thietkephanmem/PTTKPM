@@ -22,5 +22,7 @@
  	<bean id="SanPhamDAO" class="dao.SanPhamDAOImpl">
      <property name="sessionFactory" ref="mySessionFactory" />
  	</bean>
- 	
+ 	<bean id="LoaiSPDAO" class="dao.LoaiSPDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ 	</bean>
 </beans>

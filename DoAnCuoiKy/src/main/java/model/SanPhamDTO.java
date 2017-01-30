@@ -31,7 +31,6 @@ public class SanPhamDTO {
 	private Integer soluong;
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "ma_loai", nullable = false)
-	//@Column(name="ma_loai");
 	private LoaiSPDTO ma_loai;
 	@Column(name="hinh_anh")
 	private String hinh_anh;
@@ -43,8 +42,7 @@ public class SanPhamDTO {
 	private String trang_thai;
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "nha_sx", nullable = false)
-//	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
-	//@Column(name="nha_sx")
+
 	private NhaSanXuatDTO nha_sx;
 	
 	

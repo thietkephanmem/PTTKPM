@@ -13,31 +13,30 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
-import model.NhaSanXuatDTO;
-import service.NhaSanXuatService;
+import model.LoaiSPDTO;
+import service.LoaiSPService;
 
 @Controller
 @Transactional
 @EnableTransactionManagement
-public class NhaSanXuatController {
+public class LoaiSPController {
+	LoaiSPService loaiSPService;
 
-	NhaSanXuatService nhaSanXuatService;
-
-	public NhaSanXuatService getNhaSanXuatService() {
-		return nhaSanXuatService;
+	public LoaiSPService getLoaiSPService() {
+		return loaiSPService;
 	}
-	
 	@Autowired
-	public void setNhaSanXuatService(NhaSanXuatService nhaSanXuatService) {
-		this.nhaSanXuatService = nhaSanXuatService;
+	public void setLoaiSPService(LoaiSPService loaiSPService) {
+		this.loaiSPService = loaiSPService;
 	}
 	
-	@RequestMapping(value ="/nhasanxuat/list", method = RequestMethod.GET)
+	@RequestMapping(value ="/loaisanpham/list", method = RequestMethod.GET)
 	public @ResponseBody String getlist() 
 	{
-		List<NhaSanXuatDTO> list = new  ArrayList<NhaSanXuatDTO>();
-		list = nhaSanXuatService.getAll();
+		List<LoaiSPDTO> list = new  ArrayList<LoaiSPDTO>();
+		list = loaiSPService.getALLLoaisp();
 		String json = new Gson().toJson(list);
 		return json;
 	}
+	
 }

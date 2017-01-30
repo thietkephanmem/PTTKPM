@@ -25,6 +25,11 @@ public class SanPhamServiceImpl implements SanPhamService{
 		// TODO Auto-generated method stub
 		return sanphamdao.getAllSanPham();
 	}
+	@Override
+	public void createSP(SanPhamDTO sp) {
+		sanphamdao.createSanPham(sp);
+		
+	}
 	
 
 }
