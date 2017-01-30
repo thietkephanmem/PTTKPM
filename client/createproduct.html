@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="js/sanpham.js"></script>
+  <!-- <script src="js/loaisp.js"></script> -->
+
+  <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
+
+
+
+
+
+</head>
+<body ng-app="myApp" ng-controller="enventCtrl" >
+  <div data-ng-include="'header.html'"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <form role="form">
+          <div class="form-group">
+
+            <label for="exampleInputEmail1">
+              Tên sản phẩm
+            </label>
+            <input type="text" class="form-control" ng-model="tensp">
+          </div>
+          <div class="form-group">
+
+            <label for="exampleInputPassword1">
+              Giá
+            </label>
+            <input type="text" class="form-control" ng-model="gia" >
+          </div>
+          <div class="form-group">
+
+            <label for="exampleInputPassword1">
+              Số lượng
+            </label>
+            <input type="text" class="form-control" ng-model="soluong" >
+          </div>
+
+            <div class="form-group">
+
+              <label for="exampleInputPassword1">
+                Ngày nhập
+              </label>
+              <input type="Date" class="form-control" ng-model="ngaynhap">
+            </div>
+
+              <div class="form-group">
+
+                <label for="exampleInputFile">
+                  Hình ảnh
+                </label>
+                <form method="POST" action="uploadFile" enctype="multipart/form-data">
+                  <input type="file"  name="file" id="file" accept=".jpg" ng-model="hinhanh" class="form-control" >
+                </form>
+              </div>
+              <div class="form-group" ng-init="getnhasanxuat()">
+                <label for="exampleSelect1">Nhà sản xuất</label>
+                <select ng-model="nhasx" ng-options="x.ten_nha_sx for x in nhasanxuat" class="form-control">
+
+
+                </select>
+              </div>
+              <div class="form-group" ng-init="getloaisp()">
+                <label for="exampleSelect1">Loại sản phẩm</label>
+                <select ng-model="loaisp" ng-options="x.ten_loai_sp for x in loaisanpham" class="form-control">
+
+
+
+                </select>
+              </div>
+              <button type="button" class="btn btn-default" ng-click="createProduct()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div data-ng-include="'footer.html'"></div>
+
+
+    </body>
+    </html>
