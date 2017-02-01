@@ -19,7 +19,7 @@ myApp.controller('enventCtrl', function($scope, $http,$rootScope) {
     $http.get("http://localhost:8080/DoAnCuoiKy/loaisanpham/list")
     .then(function(response) {
       $scope.loaisanpham = response.data;
-  console.log( $scope.loaisanpham) ;
+      console.log( $scope.loaisanpham) ;
     });
   };
   $scope.getnhasanxuat = function() {
@@ -29,7 +29,7 @@ myApp.controller('enventCtrl', function($scope, $http,$rootScope) {
     $http.get("http://localhost:8080/DoAnCuoiKy/nhasanxuat/list")
     .then(function(response) {
       $scope.nhasanxuat = response.data;
-  console.log( $scope.nhasanxuat) ;
+      console.log( $scope.nhasanxuat) ;
     });
   };
   $scope.createProduct = function()
@@ -50,11 +50,51 @@ myApp.controller('enventCtrl', function($scope, $http,$rootScope) {
     console.log(parse) ;
     $http.post('http://localhost:8080/DoAnCuoiKy/sanpham/create',  data)
 
-					.then(function mySucces(response) {
+    .then(function mySucces(response) {
 
 
-								});
+    });
   };
+  $scope.getlistallsp = function() {
 
+
+
+    $http.get("http://localhost:8080/DoAnCuoiKy/sanpham/listall")
+    .then(function(response) {
+
+      $scope.listsp = response.data;
+      console.log($scope.listsp);
+
+
+
+      $scope.totalItems = $scope.listsp.length;
+      $scope.itemsPerPage = 8
+      $scope.currentPage = 1;
+
+    // $scope.setPage = function (pageNo) {
+    //   $scope.currentPage = pageNo;
+    // };
+
+    // $scope.pageChanged = function() {
+    //   console.log('Page changed to: ' + $scope.currentPage);
+    // };
+
+    $scope.maxSize = 5;
+    $scope.bigTotalItems = 175;
+    $scope.bigCurrentPage = 1;
+    
+    $scope.pageCount = function () {
+     return Math.ceil($scope.listsp.length / $scope.itemsPerPage);
+   };
+
+   $scope.$watch('currentPage + itemsPerPage', function() {
+     var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
+     end = begin + $scope.itemsPerPage;
+
+     $scope.filteredlistsp = $scope.listsp.slice(begin, end);
+   });
+
+ });
+  };
 
 });

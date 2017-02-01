@@ -14,15 +14,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/jquery.min.js"></script>
 	<script src="lib/bootstrap.min.js"></script>
+
 	<script src="js/sanpham.js"></script>
 
-	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
 
 	<!-- <script type="text/javascript" src="lib/nav.js"></script> -->
 </head>
 <body ng-app="myApp"  ng-controller="enventCtrl" ng-init='getEventNew()'>
 	<!--header-->
 	<div data-ng-include="'header.html'"></div>
+
+
 	<div class="banner-mat">
 		<div class="container">
 			<div class="banner">
@@ -32,6 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="offsetspan6">
                      <carousel interval="myInterval">
                           <slide ng-repeat="slide in sanpham" active="slide.active">
+
                                 <img class="image-circle" ng-src="images/{{slide.hinh_anh}}"    style="margin:auto;"/>
                          <div class="carousel-caption">
                              <h4>Slide {{$index}}</h4>
@@ -58,11 +62,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-md-3 md-col"  ng-repeat='sp in sanpham'>
 						<div class=" top-products">
 							<div class="col-md">
-								<a href="single.html"><img  src="images/{{sp.hinh_anh}}" alt="" /></a>
+								<a href="single.html?masp={{sp.ma_sp}}"><img  src="images/{{sp.hinh_anh}}" alt="{{sp.ten_sp}}" /></a>
 								<div class="top-content">
-									<h5><a href="single.html">{{sp.ten_sp}}</a></h5>
+									<h5><a href="single.html?masp={{sp.ma_sp}}">{{sp.ten_sp}}</a></h5>
 									<div class="white">
-										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">ADD TO CART</a>
+										<a href="single.html?masp={{sp.ma_sp}}" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">ADD TO CART</a>
 										<p class="dollar"><span class="in-dollar">$</span><span>{{sp.gia}}</span></p>
 										<div class="clearfix"></div>
 									</div>
