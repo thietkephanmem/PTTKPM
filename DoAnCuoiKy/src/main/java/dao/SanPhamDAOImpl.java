@@ -62,4 +62,45 @@ public class SanPhamDAOImpl implements SanPhamDAO {
 		
 	}
 
+	@Override
+	public SanPhamDTO findSPById(SanPhamDTO id) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+			Integer idsp =  id.getMa_sp();
+			Query q = session.createQuery("select e from sanpham e where e.ma_sp = ?");
+			q.setInteger(0, idsp);
+			q.setMaxResults(1);
+			
+			List<SanPhamDTO> li = q.list();
+			
+
+			session.getTransaction().commit();
+			return li.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+			return null;
+		}
+	}
+
+	@Override
+	public List<SanPhamDTO> getListSanPham() {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+
+			Query q = session.createQuery("select e from sanpham e ORDER BY e.ngay_nhap DESC");
+			
+			List<SanPhamDTO> li = q.list();
+
+			session.getTransaction().commit();
+			return li;
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+			return null;
+		}
+	}
+
 }

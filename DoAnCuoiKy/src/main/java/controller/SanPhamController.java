@@ -51,5 +51,20 @@ public class SanPhamController {
 		return "OK";
 	}
 	
+	@RequestMapping(value ="/sanpham/findbyid", method = RequestMethod.POST,produces = "application/json; charset=UTF-8")
+	public  @ResponseBody String findSP(@RequestBody String sp) 
+	{
+		Gson gson = new Gson();
+		SanPhamDTO oj = gson.fromJson(sp, SanPhamDTO.class);
+		
+		return new Gson().toJson(phamService.getSPbyId(oj));
+	}
+	@RequestMapping(value ="/sanpham/listall", method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
+	public  @ResponseBody String getAllSP() 
+	{
+		
+		
+		return new Gson().toJson(phamService.getlistsp());
+	}
 
 }

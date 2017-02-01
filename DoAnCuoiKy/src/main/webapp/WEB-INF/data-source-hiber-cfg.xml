@@ -23,6 +23,7 @@
               <value>model.PhanQuyenDTO</value>
               <value>model.SanPhamDTO</value>
               <value>model.LoaiSPDTO</value>
+            <value>model.NguoiDungDTO</value> 
           </list>
       </property>
  

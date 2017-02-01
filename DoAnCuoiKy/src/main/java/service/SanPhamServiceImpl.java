@@ -30,6 +30,16 @@ public class SanPhamServiceImpl implements SanPhamService{
 		sanphamdao.createSanPham(sp);
 		
 	}
+	@Override
+	public SanPhamDTO getSPbyId(SanPhamDTO sp) {
+		// TODO Auto-generated method stub
+		return sanphamdao.findSPById(sp);
+	}
+	@Override
+	public List<SanPhamDTO> getlistsp() {
+		// TODO Auto-generated method stub
+		return sanphamdao.getListSanPham();
+	}
 	
 
 }
