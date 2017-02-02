@@ -17,6 +17,26 @@ myApp.controller('chitietsanpham', function($scope, $http,$location) {
 		});
 	};
 
+$scope.getmenu = function(){
+    var data = {
+      ma_danh_muc : "1"
+    }
+    $http.post("http://localhost:8080/DoAnCuoiKy/loaisanpham/menu",data)
+    .then(function(response) {
+      $scope.getmenunam = response.data;
+      console.log( $scope.getmenunam) ;
+    });
+  };
+  $scope.getmenunu = function(){
+    var data = {
+      ma_danh_muc : "2"
+    }
+    $http.post("http://localhost:8080/DoAnCuoiKy/loaisanpham/menu",data)
+    .then(function(response) {
+      $scope.getmenunu= response.data;
+      console.log( $scope.getmenunu) ;
+    });
+  };
 
 
 
@@ -26,5 +46,6 @@ myApp.controller('chitietsanpham', function($scope, $http,$location) {
 myApp.config(function($locationProvider) {
 	$locationProvider.html5Mode({
 		enabled: true,
-		requireBase: false
+		requireBase: false,
+		rewriteLinks : false
 	});    });

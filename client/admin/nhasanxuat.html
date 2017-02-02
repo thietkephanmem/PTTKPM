@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+      
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     
+        <link href="assets/css/style.css" rel="stylesheet" />
+      
+    </head>
+    <body ng-app="myApp" ng-controller="nhasxctrl" ng-init="getnsx()">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>Email: </strong>info@yourdomain.com
+                        &nbsp;&nbsp;
+                        <strong>Support: </strong>+90-897-678-44
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END-->
+        <div ng-include="'header.html'"></div>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Mã nhà sản xuất</th>
+                        <th>Tên nhà sản xuất</th>
+                        <th>Địa chỉ</th>
+                       
+                        <th># #</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="nsx in nhasanxuat">
+                        <td>{{nsx.ma_nha_sx}}</td>
+                        <td>{{nsx.ten_nha_sx }} </td>
+                        <td>
+                                  {{nsx.dia_chi}} 
+                        </td>
+                        
+                        <td> 
+                            <a href="#"  class="btn btn-xs btn-danger"  ng-click="deletensx(nsx.ma_nha_sx)">Delete</a> 
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+<!-- CONTENT-WRAPPER SECTION END-->
+<div ng-include="'footer.html'"></div>
+<!-- FOOTER SECTION END-->
+<!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY SCRIPTS -->
+<script src="assets/js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/nhasx.js"></script>
+</body>
+</html>

@@ -8,7 +8,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <!-- <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"> -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+	
+<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
 	<script src="lib/angular.min.js"></script>
@@ -36,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      <carousel interval="myInterval">
                           <slide ng-repeat="slide in sanpham" active="slide.active">
 
-                                <img class="image-circle" ng-src="images/{{slide.hinh_anh}}"    style="margin:auto;"/>
+                                <img class="image-circle" ng-src="images/{{slide.hinh_anh}}"    style="margin:auto"/>
                          <div class="carousel-caption">
                              <h4>Slide {{$index}}</h4>
 
@@ -52,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="content">
 			<div class="content-top">
-				<h3 class="future">FEATURED</h3>
+				<h3 class="future">Sản phẩm HOT</h3>
 
 				<div class="content-top-in">
 

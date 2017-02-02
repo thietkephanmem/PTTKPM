@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
 </head>
-<body ng-app="myApp" ng-controller="enventCtrl" ng-init="getlistallsp()">
+<body ng-app="myApp" ng-controller="enventCtrl" ng-init="gettenloaisp()">
 
 	<div data-ng-include="'header.html'"></div>
 
@@ -27,7 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="products" >
 			<h2 class=" products-in">PRODUCTS</h2>
 
-			<div class="col-md-3 md-col" ng-repeat="sp in filteredlistsp | filter: tenloaisp">
+			<div class="col-md-3 md-col" ng-repeat="sp in filtergetsptheoloai | filter: tenloaisp">
 				<div class=" top-products">
 					<div class="col-md">
 						<a href="single.html?masp={{sp.ma_sp}}" class="compare-in"><img  src="images/{{sp.hinh_anh}}" alt="" />
