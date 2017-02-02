@@ -26,6 +26,12 @@ public class NhaSanXuatServiceImpl implements NhaSanXuatService {
 		// TODO Auto-generated method stub
 		return dao.getAll();
 	}
+	@Override
+	public void deletensanx(NhaSanXuatDTO nsx) {
+		// TODO Auto-generated method stub
+		dao.deletensx(nsx);
+		
+	}
 
 
 

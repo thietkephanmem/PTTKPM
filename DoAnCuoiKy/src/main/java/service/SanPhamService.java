@@ -10,5 +10,7 @@ public interface SanPhamService {
 	public void createSP(SanPhamDTO sp);
 	public SanPhamDTO getSPbyId(SanPhamDTO sp);
 	public List<SanPhamDTO> getlistsp();
+	public List<SanPhamDTO> getSanPhamDanhMuc(SanPhamDTO sp);
+	public void deletesp(SanPhamDTO sp);
 
 }

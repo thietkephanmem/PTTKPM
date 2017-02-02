@@ -40,6 +40,16 @@ public class SanPhamServiceImpl implements SanPhamService{
 		// TODO Auto-generated method stub
 		return sanphamdao.getListSanPham();
 	}
+	@Override
+	public List<SanPhamDTO> getSanPhamDanhMuc(SanPhamDTO sp) {
+		// TODO Auto-generated method stub
+		return sanphamdao.getSanPhamDanhMuc(sp);
+	}
+	@Override
+	public void deletesp(SanPhamDTO sp) {
+		sanphamdao.delete(sp);
+		
+	}
 	
 
 }

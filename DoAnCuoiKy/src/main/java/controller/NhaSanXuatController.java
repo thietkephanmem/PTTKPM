@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -38,6 +39,16 @@ public class NhaSanXuatController {
 		List<NhaSanXuatDTO> list = new  ArrayList<NhaSanXuatDTO>();
 		list = nhaSanXuatService.getAll();
 		String json = new Gson().toJson(list);
+		return json;
+	}
+	@RequestMapping(value ="/nhasanxuat/delete", method = RequestMethod.POST)
+	public @ResponseBody String delete(@RequestBody String dm) 
+	{
+		Gson gson = new Gson();
+		NhaSanXuatDTO oj = gson.fromJson(dm, NhaSanXuatDTO.class);
+		
+		nhaSanXuatService.deletensanx(oj);
+		String json = new Gson().toJson(oj);
 		return json;
 	}
 }

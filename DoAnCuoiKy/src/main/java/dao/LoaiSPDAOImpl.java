@@ -44,4 +44,41 @@ public class LoaiSPDAOImpl implements LoaiSPDAO {
 		}
 	}
 
+	@Override
+	public List<LoaiSPDTO> getmenu(int dm) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+			
+
+			Query q = session.createQuery("select e from loaisanpham e where e.ma_danh_muc =  ?");
+			q.setInteger(0, dm);
+			List<LoaiSPDTO> li = q.list();
+
+			session.getTransaction().commit();
+			return li;
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+			return null;
+		}
+	}
+
+	@Override
+	public void deleteloai(LoaiSPDTO lsp) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.delete(lsp);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+	}
+
 }

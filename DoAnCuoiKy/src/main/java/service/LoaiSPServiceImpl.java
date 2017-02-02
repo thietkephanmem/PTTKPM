@@ -25,5 +25,15 @@ public class LoaiSPServiceImpl implements LoaiSPService {
 		// TODO Auto-generated method stub
 		return lsp.getALL();
 	}
+	@Override
+	public List<LoaiSPDTO> getmenusp(int dm) {
+		// TODO Auto-generated method stub
+		return lsp.getmenu(dm);
+	}
+	@Override
+	public void deletelsp(LoaiSPDTO lsps) {
+		lsp.deleteloai(lsps);
+
+	}
 
 }

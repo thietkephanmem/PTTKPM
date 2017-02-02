@@ -14,6 +14,9 @@ public class LoaiSPDTO {
 	private Integer ma_loai_sp;
 	@Column(name = "ten_loai_sp")
 	private String ten_loai_sp;
+	@Column(name = "ma_danh_muc")
+
+	private Integer ma_danh_muc;
 
 	public Integer getMa_loai_sp() {
 		return ma_loai_sp;
@@ -30,4 +33,13 @@ public class LoaiSPDTO {
 	public void setTen_loai_sp(String ten_loai_sp) {
 		this.ten_loai_sp = ten_loai_sp;
 	}
+
+	public Integer getMa_danh_muc() {
+		return ma_danh_muc;
+	}
+
+	public void setMa_danh_muc(Integer ma_danh_muc) {
+		this.ma_danh_muc = ma_danh_muc;
+	}
+	
 }

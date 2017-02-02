@@ -42,4 +42,22 @@ public class NhaSanXuatDAOImpl implements NhaSanXuatDAO {
 		}
 	}
 
+	@Override
+	public void deletensx(NhaSanXuatDTO nsx) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.delete(nsx);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+		
+	}
+
 }

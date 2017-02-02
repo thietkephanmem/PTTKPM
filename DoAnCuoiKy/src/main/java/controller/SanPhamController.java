@@ -66,5 +66,26 @@ public class SanPhamController {
 		
 		return new Gson().toJson(phamService.getlistsp());
 	}
+	
+	@RequestMapping(value ="/sanpham/getdmsanpham", method = RequestMethod.POST,produces = "application/json; charset=UTF-8")
+	public  @ResponseBody String getdmsanpham(@RequestBody String sp) 
+	{
+		Gson gson = new Gson();
+		SanPhamDTO oj = gson.fromJson(sp, SanPhamDTO.class);
+		
+		List<SanPhamDTO> list = new  ArrayList<SanPhamDTO>();
+		list = phamService.getSanPhamDanhMuc(oj);
+		String json = new Gson().toJson(list);
+		return json;
+	}
+	@RequestMapping(value ="/sanpham/delete", method = RequestMethod.POST,produces = "application/json; charset=UTF-8")
+	public  @ResponseBody String deletesp(@RequestBody String sp) 
+	{
+		Gson gson = new Gson();
+		SanPhamDTO oj = gson.fromJson(sp, SanPhamDTO.class);
+		phamService.deletesp(oj);
+		String json = new Gson().toJson(oj);
+		return json;
+	}
 
 }

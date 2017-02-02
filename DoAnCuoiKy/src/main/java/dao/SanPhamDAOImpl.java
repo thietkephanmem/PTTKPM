@@ -32,7 +32,7 @@ public class SanPhamDAOImpl implements SanPhamDAO {
 
 			Query q = session.createQuery("select e from sanpham e ORDER BY e.ngay_nhap DESC");
 			q.setFirstResult(0);
-			q.setMaxResults(10);
+			q.setMaxResults(8);
 			List<SanPhamDTO> li = q.list();
 
 			session.getTransaction().commit();
@@ -101,6 +101,46 @@ public class SanPhamDAOImpl implements SanPhamDAO {
 			session.getTransaction().rollback();
 			return null;
 		}
+	}
+
+	@Override
+	public List<SanPhamDTO> getSanPhamDanhMuc(SanPhamDTO sp) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+			Integer idsp =  sp.getMa_loai().getMa_loai_sp();
+			Query q = session.createQuery("select e from sanpham e where e.ma_loai = ?");
+			q.setInteger(0, idsp);
+		
+			
+			List<SanPhamDTO> li = q.list();
+			
+
+			session.getTransaction().commit();
+			return li;
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+			return null;
+		}
+	}
+
+	@Override
+	public void delete(SanPhamDTO sp) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.delete(sp);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+		
 	}
 
 }
