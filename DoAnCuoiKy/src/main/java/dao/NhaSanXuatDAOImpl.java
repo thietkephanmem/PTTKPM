@@ -60,4 +60,22 @@ public class NhaSanXuatDAOImpl implements NhaSanXuatDAO {
 		
 	}
 
+	@Override
+	public void createNSX(NhaSanXuatDTO nsx) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.saveOrUpdate(nsx);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+		
+	}
+
 }

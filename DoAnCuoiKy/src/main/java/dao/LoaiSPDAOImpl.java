@@ -81,4 +81,22 @@ public class LoaiSPDAOImpl implements LoaiSPDAO {
 		}
 	}
 
+	@Override
+	public void createLSP(LoaiSPDTO lsp) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.saveOrUpdate(lsp);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+		
+	}
+
 }

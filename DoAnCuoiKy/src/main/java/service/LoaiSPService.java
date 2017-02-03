@@ -8,4 +8,5 @@ public interface LoaiSPService {
 	public List<LoaiSPDTO> getALLLoaisp();
 	public List<LoaiSPDTO> getmenusp(int dm);
 	public void deletelsp(LoaiSPDTO lsps);
+	public void createLoaiSP(LoaiSPDTO lsps);
 }

@@ -35,5 +35,10 @@ public class LoaiSPServiceImpl implements LoaiSPService {
 		lsp.deleteloai(lsps);
 
 	}
+	@Override
+	public void createLoaiSP(LoaiSPDTO lsps) {
+		lsp.createLSP(lsps);
+		
+	}
 
 }

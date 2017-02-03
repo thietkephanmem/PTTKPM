@@ -32,6 +32,11 @@ public class NhaSanXuatServiceImpl implements NhaSanXuatService {
 		dao.deletensx(nsx);
 		
 	}
+	@Override
+	public void createNSanXuat(NhaSanXuatDTO nsx) {
+		dao.createNSX(nsx);
+		
+	}
 
 
 

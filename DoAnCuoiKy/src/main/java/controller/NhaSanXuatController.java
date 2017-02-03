@@ -51,4 +51,14 @@ public class NhaSanXuatController {
 		String json = new Gson().toJson(oj);
 		return json;
 	}
+	@RequestMapping(value ="/nhasanxuat/create", method = RequestMethod.POST)
+	public @ResponseBody String create(@RequestBody String dm) 
+	{
+		Gson gson = new Gson();
+		NhaSanXuatDTO oj = gson.fromJson(dm, NhaSanXuatDTO.class);
+		
+		nhaSanXuatService.createNSanXuat(oj);
+		String json = new Gson().toJson(oj);
+		return json;
+	}
 }

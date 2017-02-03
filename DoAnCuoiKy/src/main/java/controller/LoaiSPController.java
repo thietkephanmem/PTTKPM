@@ -61,5 +61,15 @@ public class LoaiSPController {
 		String json = new Gson().toJson(oj);
 		return json;
 	}
+	@RequestMapping(value ="/loaisanpham/create", method = RequestMethod.POST)
+	public @ResponseBody String create(@RequestBody String dm) 
+	{
+		Gson gson = new Gson();
+		LoaiSPDTO oj = gson.fromJson(dm, LoaiSPDTO.class);
+		
+		loaiSPService.createLoaiSP(oj);
+		String json = new Gson().toJson(oj);
+		return json;
+	}
 	
 }
