@@ -6,59 +6,89 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-      
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     
-        <link href="assets/css/font-awesome.css" rel="stylesheet" />
-     
-        <link href="assets/css/style.css" rel="stylesheet" />
-      
-    </head>
-    <body ng-app="myApp" ng-controller="loaisanphamctrl" ng-init="getloaisp()">
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <strong>Email: </strong>info@yourdomain.com
-                        &nbsp;&nbsp;
-                        <strong>Support: </strong>+90-897-678-44
-                    </div>
 
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myApp" ng-controller="loaisanphamctrl" ng-init="getloaisp()">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Email: </strong>info@yourdomain.com
+                    &nbsp;&nbsp;
+                    <strong>Support: </strong>+90-897-678-44
                 </div>
+
             </div>
-        </header>
-        <!-- HEADER END-->
-        <div ng-include="'header.html'"></div>
-
-        <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>Mã loại</th>
-                        <th>Tên loại</th>
-                        <th>Danh mục</th>
-                       
-                        <th># #</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr ng-repeat="lsp in loaisanpham">
-                        <td>{{lsp.ma_loai_sp}}</td>
-                        <td>{{lsp.ten_loai_sp }} </td>
-                        <td>
-                                  {{lsp.ma_danh_muc}} 
-                        </td>
-                        
-                        <td> 
-                            <a href="#"  class="btn btn-xs btn-danger"  ng-click="deletelsp(lsp.ma_loai_sp)">Delete</a> 
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
         </div>
+    </header>
+    <!-- HEADER END-->
+    <div ng-include="'header.html'"></div>
+    <h4>Thêm loại sản phẩm</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+
+                <label for="exampleInputPassword1">
+                  Tên loại sản phẩm
+              </label>
+              <input type="text" class="form-control" ng-model="tenlsp" >
+          </div>
+
+
+      </div>
+      <div class="col-md-6">
+        <div class="form-group" >
+        <label for="exampleSelect1">Loại sản phẩm</label>
+        <select ng-model="dm"  class="form-control">
+            <option value="1" ng-selected="'nam'==dm">nam</option>
+            <option value="2" ng-selected="'nu'==dm">nữ</option>
+
+
+        </select>
     </div>
+
+</div>
+<button type="button" class="btn btn-primary" ng-click="createlsp()">
+    Save & update
+</button>
+</div>
+<h4 >Danh sách loại sản phẩm</h4>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Mã loại</th>
+                <th>Tên loại</th>
+                <th>Danh mục</th>
+
+                <th># #</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr ng-repeat="lsp in loaisanpham">
+                <td>{{lsp.ma_loai_sp}}</td>
+                <td><a href="" ng-click="editlsp(lsp.ma_loai_sp,lsp.ten_loai_sp,lsp.ma_danh_muc)">{{lsp.ten_loai_sp }}</a> </td>
+                <td>
+                  {{lsp.ma_danh_muc}} 
+              </td>
+
+              <td> 
+                <a href="#"  class="btn btn-xs btn-danger"  ng-click="deletelsp(lsp.ma_loai_sp)">Delete</a> 
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+</div>
 
 </div>
 </div>

@@ -23,20 +23,64 @@ myApp.controller('loaisanphamctrl', function($scope, $http,$window) {
   $scope.deletelsp = function(malsp) {
     var data =
     {  
-    ma_loai_sp: malsp
-   
+      ma_loai_sp: malsp
+      
     }
 
 
     $http.post("http://localhost:8080/DoAnCuoiKy/loaisanpham/delete", data)
     .then(function(response) {
       $window.location.reload();
-     alert("Xóa thành công");
+      alert("Xóa thành công");
 
 
       
 
     });
+  };
+
+  $scope.createlsp= function() {
+    
+    var data =
+    {  
+      ma_loai_sp:  $scope.manlsp, 
+      ten_loai_sp: $scope.tenlsp,
+      ma_danh_muc: $scope.dm
+      
+    }
+    console.log(data);
+
+    $http.post("http://localhost:8080/DoAnCuoiKy/loaisanpham/create", data)
+    .then(function(response) {
+      $window.location.reload();
+      alert("Save & update thành công");
+
+
+      
+
+    });
+  };
+  $scope.editlsp= function(manlsp, tenlsp,dm) {
+
+    $scope.manlsp = manlsp
+    $scope.tenlsp = tenlsp;
+    $scope.dm = dm;
+
+    if ($scope.dm =='nam') {
+      $scope.dm = '1';
+    }
+    else $scope.dm ='2';
+    
+    var data =
+    { ma_loai_sp: $scope.manlsp,
+      ten_loai_sp:  $scope.tenlsp,
+      ma_danh_muc: $scope.dm
+      
+      
+    }
+    console.log(data);
+
+    
   };
 });
 

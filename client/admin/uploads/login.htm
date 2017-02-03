@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asana - Log In</title><script>__FILE__="(none)";var config = {"CLUSTER":"prod"};</script><link rel="shortcut icon" href="https://d3ki9tyy5l5ruj.cloudfront.net/obj/8897db9ac54fb68c74f76b4d3e2e753b524fca42/Favicon@3x.png" />
+
+<script>__FILE__="(none)";req = reqLazy = function(file_path) {   var m = modules[file_path];   return (m !== undefined) ? m.exports : undefined; }; modules = {}; globals = window;</script>
+<link type="text/css" rel="stylesheet" href="/-/static/hash/615bd5dcaed8bffefff10fdf20af18d1/build/css/apps/asana/css/reskin_dialog_page_root.css" />
+<link type="text/css" rel="stylesheet" href="/-/static/hash/a89e51e0284b8749c0d1877a06dbc409/build/css/apps/asana/css/reskin_login.css" />
+<script>__FILE__="3rdparty/mochikit/MochiKit/Base.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/23484d8f5c9055906daaf5906d158f3d/3rdparty/mochikit/MochiKit/Base.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/Format.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/b7a95efea069f424ef006dbfb425d672/3rdparty/mochikit/MochiKit/Format.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/Text.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/df9c935279c07b19314d968e2abacc9c/3rdparty/mochikit/MochiKit/Text.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/Iter.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/ce262992e95afe4b37091283981a725a/3rdparty/mochikit/MochiKit/Iter.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/Async.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/6e0a12cdf991bd85584d369e98c8cba0/3rdparty/mochikit/MochiKit/Async.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/DOM.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/74fd4abd5c4eac367ee3192d7d234aba/3rdparty/mochikit/MochiKit/DOM.js" charset="utf-8"></script>
+<script>__FILE__="3rdparty/mochikit/MochiKit/Style.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/d02d695fca07c9f337b02b426404a8cd/3rdparty/mochikit/MochiKit/Style.js" charset="utf-8"></script>
+<script>__FILE__="luna/common/lib/minimochi.js";module = { id: __FILE__, exports: {} };exports = module.exports;modules[module.id] = module;</script>
+<script type="text/javascript" src="/-/static/hash/e7f593e5db4fb858f0fe915563727682/luna/common/lib/minimochi.js" charset="utf-8"></script>
+</head>
+<body>
+<!-- DEBUG-TAG: login -->
+<div id="Flags" class="diagnostics_debug_batches_clean_output log_events_to_console enable_reskin enable_hide_loading_text enable_recaptcha_v2 enable_strict_https log_api_metrics_to_graphite enable_list_caching enable_show_premium_only_teams_as_premium_workspaces enable_spooky_theme enable_winter_theme enable_enforce_https_oauth_redirect_field webkit"><script type="text/javascript" src="/-/static/luna/browser/browser_google_auth.js"></script><script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Check if there is content in our form inputs and remove `disabled`
+        // from the button element.
+        var inputs = document.querySelectorAll('input[name="e"]');
+        var button = document.querySelector('#submit_button');
+
+        var updateDisabledStates = function() {
+          var disabled = false;
+
+           [].forEach.call(inputs, function(inputElem) {
+             if (inputElem.value=='') {
+               disabled = true;
+             }
+           });
+
+           // Set states for email and password inputs
+           if (disabled) {
+             button.setAttribute('disabled', '');
+           } else {
+             button.removeAttribute('disabled');
+           }
+        };
+
+        [].forEach.call(inputs, function (e) {
+          e.addEventListener('input', updateDisabledStates);
+        });
+        updateDisabledStates();
+      });
+
+      /**
+       * Simulates putting the saml_email into the email box and pressing
+       * Log in, which sends people to their SAML provider to log in
+       *
+       * @param opt_saml_email Sets the value of the email input to the provided
+       *   string, if not falsy
+       *
+       */
+      function submitSamlEmail(opt_saml_email) {
+        var email_input = document.querySelector('input[name="e"]');
+        var button = document.querySelector('#submit_button');
+
+        if (opt_saml_email) {
+          email_input.value = opt_saml_email;
+        }
+
+        button.removeAttribute('disabled');
+        button.click();
+      }
+
+      function submitRecentSamlEmail() {
+        var saml_email = "null";
+        submitSamlEmail(saml_email);
+      }
+
+      /**
+       * Generates an email in the implicit SAML domain, and tries to login
+       * using it. Triggers a redirect.
+       *
+       * We do this by introducing a new, hidden input that maps to the email
+       * form field (and removing the mapping from the visible email element),
+       * pre-filling it with an email address in the right EmailDomain (even
+       * though the address itself isn't real, we'll still redirect to the
+       * right IdP and authenticate the right user) and then simulating clicking
+       * on the submit button.
+       */
+      function submitImplicitSamlDomain() {
+        var saml_email = "login@null";
+
+        var email_input = document.querySelector('input[name="e"]');
+        email_input.removeAttribute("name");
+
+        var form = document.querySelector("#dialog_form");
+
+        var hidden_email_element = document.createElement("input");
+        hidden_email_element.setAttribute("type", "hidden");
+        hidden_email_element.setAttribute("name", "e");
+        hidden_email_element.setAttribute("value", saml_email);
+
+        form.appendChild(hidden_email_element);
+
+        submitSamlEmail();
+      }
+
+      function switchFromSamlLoginToNormalLogin() {
+        var saml_contents = document.querySelector('#saml_login_contents');
+        var normal_contents = document.querySelector('#normal_login_contents');
+
+        saml_contents.classList.add("dialog--nux-contents-hidden");
+        normal_contents.classList.remove("dialog--nux-contents-hidden");
+      }
+    </script><script>BrowserGoogleAuth.init();</script><script type="text/javascript" src="/-/static/luna/browser/dialog.js/?v=3"></script><div id="dialog_wrapper"><script>
+      if (navigator.userAgent.indexOf('WebKit') > 0) {
+        document.getElementById("dialog_wrapper").className += ' webkit';
+      }
+    Dialog.event_name_to_url["BrowserLogin-GoogleAuth-Redirect"] = "https://app.asana.com/app/asana/-/log?se=%7B%22name%22%3A%22BrowserLogin-GoogleAuth-Redirect%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F55.0.2883.87%20Safari%2F537.36%22%7D&cb=1483779127112&hash=b5e4ba045261bdb4ab8a750ac2cd37ef2bee1fe89e7c42c56a1d8972d072d423";
+Dialog.event_name_to_url["BrowserLogin-GoogleAuth-Popup-Start"] = "https://app.asana.com/app/asana/-/log?se=%7B%22name%22%3A%22BrowserLogin-GoogleAuth-Popup-Start%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F55.0.2883.87%20Safari%2F537.36%22%7D&cb=1483779127113&hash=3f761d4e521700fe721e9d4bea6029665c34252b8802bec49a8815d34221f77c";
+Dialog.event_name_to_url["BrowserLogin-GoogleAuth-Popup-NotAuthorized"] = "https://app.asana.com/app/asana/-/log?se=%7B%22name%22%3A%22BrowserLogin-GoogleAuth-Popup-NotAuthorized%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F55.0.2883.87%20Safari%2F537.36%22%7D&cb=1483779127114&hash=0c2c28e84184c596c88f215e92fe02f14a55c758851138903693ff9799ff301e";
+Dialog.event_name_to_url["BrowserLogin-GoogleAuth-Popup-Authorized"] = "https://app.asana.com/app/asana/-/log?se=%7B%22name%22%3A%22BrowserLogin-GoogleAuth-Popup-Authorized%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F55.0.2883.87%20Safari%2F537.36%22%7D&cb=1483779127115&hash=da7e497795658399acb55c1042d54f25bcf8022fe69adf5478bc98b4c7bf5b22";</script><div class="dialog--nux dialog-page"><div class="dialog--nux-header"><a href=http://www.asana.com/?utm_source=asana.com&amp;utm_campaign=app.asana.com><img class="dialog--nux-logo" src="/-/static/apps/asana/view/reskin_logo.png"></a></div><div class="dialog--nux-container" id="dialog-container"><div class="dialog--nux-content"><h1 class="title">Log In</h1><form id="dialog_form" class="dialog--nux-inner" action="https://app.asana.com/app/asana/-/login" method="post"><input type="hidden" name="u" value="https://app.asana.com/" /><input type="hidden" name="i" value="password" /><input type="hidden" name="src" value="login" /><input type="hidden" name="auth" /><input type="hidden" name="xsrf_token" value="2b6aae8e2a18a077" /><div id="normal_login_contents"><div class="buttonView--center"><div tabindex="0" class="buttonView buttonView--primary buttonView--large" id="google_auth_button" onclick="return Dialog.Login.loginWithGoogle(false, 'https://app.asana.com/-/oauth2callback', 'https:\/\/app.asana.com\/')"><span>Use Google Account</span></div></div><div class="dialog--nux-seperator">or</div><div class="form-input"><label>Email Address</label><input tabindex="1" type="email" name="e" id="email_input" value="" /></div><span class="field-no-status"></span><div class="form-input"><label>Password</label><input tabindex="2" type="password" name="p" id="password_input" /><span class="input--help"><a href="/-/forgot_password" tabindex="-1">Forgot your password?</a></span></div><div class="form-input form-input--button"><button tabindex="3" class="buttonView buttonView--default buttonView--primary buttonView--large button-submit" id="submit_button" onclick="Dialog.submit();" disabled><span>Log In</span></button></div></div><script>Dialog.makeElementSubmit('email_input');Dialog.makeElementSubmit('password_input'); Dialog.makeElementSubmit('submit_button');</script></form></div><div class="dialog--nux-footer"><div class="dialog--nux-footer-left"><nav><a href="http://asana.com" target="_blank"><span>About Asana</span</a><a href="http://asana.com/blog" target="_blank"><span>Blog</span</a><a href="http://asana.com/jobs" target="_blank"><span>Jobs</span</a><a href="http://asana.com/help" target="_blank"><span>Help</span</a><a href="http://asana.com/terms" target="_blank"><span>Terms</span></a></nav></div><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7MF9W" height="0" width="0" style="display:none;visibility:hidden"></iframe><div class="dialog--nux-footer-right"><!-- DEBUG-TAG: login-signup --><span>Don&#146;t have an account?</span><a class="buttonView buttonView--default buttonView--background" href="http://www.asana.com/?utm_source=asana.com&amp;utm_campaign=app.asana.com">Sign Up</a></div></div></div><div class="dialog--nux-after"></div></div></div></div><script>var initial_focused_element = 'email_input';var target_url = "https:\/\/app.asana.com\/";</script><script>
+    document.getElementById(initial_focused_element).focus();
+  </script>
+<div id="debug_page_load_marker" name="login" style="display:none"></div>
+</body>
+</html>
