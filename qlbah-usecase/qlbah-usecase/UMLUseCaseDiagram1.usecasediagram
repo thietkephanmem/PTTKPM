@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5f40fc0d-0a06-46f5-9110-4407552193c1" name="UMLUseCaseDiagram1" linkedPackageId="d26bb505-0932-489a-b739-f7718114b45a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5f40fc0d-0a06-46f5-9110-4407552193c1" name="UMLUseCaseDiagram1" linkedPackageId="d26bb505-0932-489a-b739-f7718114b45a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="1dd9fbf3-4820-4b44-9e21-45ebb73125ae" name="nhan vien" isAbstract="false" isLeaf="false">
@@ -307,21 +307,21 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="22e9fadd-28bb-4115-8941-2e54222f08c7" />
           </association>
-          <association Id="ad7815bb-42fc-430e-802f-3688b37efa47" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly nhom hang" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="444be576-a4a5-496d-b95d-e56d320df245" LastKnownName="quan ly nhom hang" />
+          <association Id="ae3eacc8-0004-4901-8606-5e8d1a6928db" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="quan ly danh muc san pham" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5cbbcfa1-746c-49be-b452-e73864d1e70c" LastKnownName="quan ly danh muc san pham" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="0dbeb9fb-fe57-4a93-b278-4be65b517ee6" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="b25cc3ae-7d39-4fc8-850b-843a95aef1e3" />
+                <memberEnd Id="4dea4ea5-7599-47ae-9c87-1357b8653e5b" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="40991385-b520-4f22-8222-d78c63fdad6a" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2081ca22-3ca0-4a63-80d7-9bfa530b80db" name="quan ly nhom hang" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="6199470a-7377-4466-bbde-baf1c642ff9d" />
+                <memberEnd Id="75886b89-0a10-46ef-90be-4c4c43aea5a4" name="quan ly danh muc san pham" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b1d5b76-f4d3-45b5-a3ed-541706fd5f04" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="2d63c7a6-b4c6-408b-af4f-4e290fd4d291" />
+            <elementDefinition Id="a07a0f1a-7dba-4d44-86e5-17f77c10fa47" />
           </association>
         </targetEnds>
       </actor>
@@ -351,39 +351,6 @@
             <elementDefinition Id="dffd437c-08c2-4237-9079-49dc9066504a" />
           </include>
         </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="20f4a533-b816-4b88-9bbf-6c34d24e169e" name="them tai khoan" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="56b1df99-48b6-4101-810f-d5800c49cac7" />
-        <extendedCases>
-          <extend Id="c969eb6c-cbba-4bc4-9204-b78d16e0ef73">
-            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
-            <elementDefinition Id="93c56eb7-3648-405c-9a62-220dc07dc004" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="b87b0f60-581e-4602-b076-b783fd2c2864" name="xoa tai khoan" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="c0ba914e-f163-4f47-9432-8087fc838a6f" />
-        <extendedCases>
-          <extend Id="903e6dff-985c-4b2f-b763-30c402539801">
-            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
-            <elementDefinition Id="beb79a05-5d8a-45b0-9def-f0302232e9cb" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="12f091ed-0fce-4191-a7fe-d6edde9d8ee7" name="sua tai khoan" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="b4f80714-ad91-4351-aa2a-7aa974fb161a" />
-        <extendedCases>
-          <extend Id="60ea2c90-c1c1-42c9-b9c3-920e847b2d10">
-            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
-            <elementDefinition Id="23d99832-4ad6-4780-98ad-73787baf63f5" />
-          </extend>
-        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -481,17 +448,6 @@
             <elementDefinition Id="794859a9-ac7c-40b3-a181-2d7eae15e520" />
           </generalization>
         </generalsInternal>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="8617c14a-8cd8-4863-bd76-670709afa083" name="cap nhat thong tin nguoi dung" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="2c3ff239-5f2a-41a3-a9d2-8aae03210abd" />
-        <extendedCases>
-          <extend Id="12a0360c-1214-4fd2-910e-512b31b60c1a">
-            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
-            <elementDefinition Id="aedac7f7-8243-4fcd-8816-b002c7acaac4" />
-          </extend>
-        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -609,8 +565,69 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="444be576-a4a5-496d-b95d-e56d320df245" name="quan ly nhom hang" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="fea2a055-641e-483e-bb30-a1f948b7359f" />
+      <useCase Id="5cbbcfa1-746c-49be-b452-e73864d1e70c" name="quan ly danh muc san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c332ffe-6379-4048-ab5c-619b6ccbadc4" />
+        <additions>
+          <include Id="d147b04b-dd82-46a5-9ff1-f65e59af57e6">
+            <useCaseMoniker Id="4501d80b-9bfc-4503-9e4b-4f74dc719baa" LastKnownName="dang nhap" />
+            <elementDefinition Id="582ca162-8f55-4fc7-a570-7fec7940e623" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a1c41ea-0425-4ba8-a7bd-39271dc6e9ed" name="them xoa sua san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1fc3028-2199-400b-a1f6-23e26fa33fe3" />
+        <extendedCases>
+          <extend Id="914cacb4-5dd5-4608-8864-5a0b034728e7">
+            <useCaseMoniker Id="293c84ca-3221-4004-b513-01b5b241591b" LastKnownName="quan ly san pham" />
+            <elementDefinition Id="c346be71-efb7-4284-b012-d7aa76d5ea6e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c40a1c8f-6a3f-44fc-8272-1300f65cd17e" name="them xoa sua loai san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d3e89cc-562f-4113-af75-b920c4deb221" />
+        <extendedCases>
+          <extend Id="78e8f96d-0eab-45c4-87d0-3648c93f0288">
+            <useCaseMoniker Id="255e2cc4-dde8-48d3-8b65-9b5409def3ab" LastKnownName="quan ly loai san pham" />
+            <elementDefinition Id="205e8e13-0b70-4b46-8058-10d0f716fbc4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe284aff-9ed9-460d-b250-711f9fb1eb8a" name="them xoa sua danh muc san pham" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27fbfcda-bc49-4774-b43b-b23a106ac4c9" />
+        <extendedCases>
+          <extend Id="4960d2ce-08f0-4f19-a4bc-f1e60b436633">
+            <useCaseMoniker Id="5cbbcfa1-746c-49be-b452-e73864d1e70c" LastKnownName="quan ly danh muc san pham" />
+            <elementDefinition Id="0538214c-3536-4652-b93b-0a3fea2b586e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f202581e-8ce9-463b-8187-32ae1f16fdd1" name="them xoa sua don hang" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd8704bf-66e7-4301-bab2-6da120ad8d59" />
+        <extendedCases>
+          <extend Id="ae74754e-2d6b-4066-a2f8-72f951469096">
+            <useCaseMoniker Id="5d98a265-8396-4d6d-a0a5-f0cfbb252e4a" LastKnownName="quan ly don hang" />
+            <elementDefinition Id="9877dfea-db4a-4a15-af28-ca59f1e9f35a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="70285270-5622-46d2-8a40-cc25f88d3bc6" name="them, xoa, sua tai khoan nguoi dung" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5aa4764-c837-48d0-a815-fb5283756ca1" />
+        <extendedCases>
+          <extend Id="f72ecb4b-6abe-4f17-893e-703b86a8627c">
+            <useCaseMoniker Id="b696318c-079b-4e97-8275-77f1251fa4e8" LastKnownName="quan ly nguoi dung" />
+            <elementDefinition Id="d8b53943-7865-47a2-8f00-f52d270b2bce" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
