@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="99bde675-456b-4465-a656-1d82dacae047"
   name="qlbah-usecase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1611,6 +1611,56 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0aecd39c-4bdb-41c1-97aa-e4028a578033"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bb62fbbd-3b53-4e0c-b8d9-8664b96dd172"
+              LastKnownName="nha san xuat"
+              LastKnownLocation="qlbah-usecase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9fb2955e-8d8a-40f5-850a-b1b6d1f2f118"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d6df76b4-faea-4859-ae41-344eb3676723"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="947e4bb2-6a1c-48d1-ac28-dd4a3f582484"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba82f3cc-8ea8-465b-be93-38857cefc7b9"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -1627,17 +1677,6 @@
           <property
             Id="1955b002-2e51-4b03-be34-f1604d9a6ac6"
             name="ten san pham"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="c8f2d11a-19e7-4526-b430-51ff4a2aaab8"
-            name="nhom san pham"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1671,6 +1710,28 @@
           <property
             Id="a75d4882-bc66-4d61-ad5f-f9c79f73e9ef"
             name="don gia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d84d867d-396e-431a-96af-567fba5747b3"
+            name="nha san xuat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="772b83e6-19bf-4089-8e49-ba7476a6ce93"
+            name="loai san pham"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2048,17 +2109,6 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="183f9b6e-f961-489e-9d05-82d00a50a431"
-            name="san pham"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="135ed10b-8e68-4fe5-98e2-0d7981d5fcf1"
             name="thong tin loai san pham"
             isLeaf="false"
@@ -2298,17 +2348,6 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property
-            Id="0544d13d-e97f-439b-b3da-42d5b93795d8"
-            name="san pham"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
           <property
             Id="3ceacdcd-088a-4e31-8fcc-b8f058e989f0"
             name="mo ta"
@@ -2676,7 +2715,7 @@
             isAbstract="false">
             <classMoniker
               Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
-              LastKnownName="tai khoan"
+              LastKnownName="taikhoan"
               LastKnownLocation="qlbah-usecase.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2815,7 +2854,7 @@
     <packageHasNamedElement>
       <class
         Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
-        name="san pham"
+        name="sanpham"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2824,7 +2863,14 @@
             Id="5d757486-39f3-41a0-8401-93845ab3fb9c">
             <classMoniker
               Id="a9ad036a-4d71-4b65-850f-795b190acc10"
-              LastKnownName="loai san pham"
+              LastKnownName="loaisanpham"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </dependency>
+          <dependency
+            Id="39d9b7d0-13a2-4b77-8fe7-e2c385f2dff6">
+            <classMoniker
+              Id="46bde4e2-954a-4d5c-ae02-7f07f818be8a"
+              LastKnownName="NhaSanXuat"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -2906,13 +2952,24 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="78e20c49-a5a7-4bfc-84ea-e036ededdc97"
+            name="mansx"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
-        name="tai khoan"
+        name="taikhoan"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3000,7 +3057,7 @@
     <packageHasNamedElement>
       <class
         Id="6e232789-a910-4f66-b933-e14c8ef58997"
-        name="don hang"
+        name="donhang"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3009,7 +3066,7 @@
             Id="27bc5fef-4cd0-44a9-b963-61a10dc310b3">
             <classMoniker
               Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
-              LastKnownName="hinh thuc thanh toan"
+              LastKnownName="hinhthucthanhtoan"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3053,7 +3110,7 @@
     <packageHasNamedElement>
       <class
         Id="ca2dfa49-abee-47b6-81ff-da53f039e0b5"
-        name="chi tiet don hang"
+        name="chitietdonhang"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3062,14 +3119,14 @@
             Id="478344ad-c5ab-479b-bad4-04a4d323ff5f">
             <classMoniker
               Id="6e232789-a910-4f66-b933-e14c8ef58997"
-              LastKnownName="don hang"
+              LastKnownName="donhang"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
           <dependency
             Id="a9cf0a9e-5d06-4143-8121-ddf434fefab9">
             <classMoniker
               Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
-              LastKnownName="san pham"
+              LastKnownName="sanpham"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3146,7 +3203,7 @@
     <packageHasNamedElement>
       <class
         Id="a9ad036a-4d71-4b65-850f-795b190acc10"
-        name="loai san pham"
+        name="loaisanpham"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3155,7 +3212,7 @@
             Id="916f565d-0dfd-4900-89fa-a96ee3daec3f">
             <classMoniker
               Id="141bebdf-ee8a-4851-8bba-9e48f30a6507"
-              LastKnownName="danh muc san pham"
+              LastKnownName="danhmucsanpham"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3199,7 +3256,7 @@
     <packageHasNamedElement>
       <class
         Id="5d0af79a-7ffc-455b-a857-d9abbcc54177"
-        name="phan quyen"
+        name="phanquyen"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3208,7 +3265,7 @@
             Id="b08355e0-b3eb-4b37-8123-28d9d3e49577">
             <classMoniker
               Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
-              LastKnownName="tai khoan"
+              LastKnownName="taikhoan"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3241,7 +3298,7 @@
     <packageHasNamedElement>
       <class
         Id="141bebdf-ee8a-4851-8bba-9e48f30a6507"
-        name="danh muc san pham"
+        name="danhmucsanpham"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3283,7 +3340,7 @@
             Id="a0ca6a85-ae72-4b8c-88ec-a2f5bb203840">
             <classMoniker
               Id="6e232789-a910-4f66-b933-e14c8ef58997"
-              LastKnownName="don hang"
+              LastKnownName="donhang"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3363,7 +3420,7 @@
             isAbstract="false">
             <classMoniker
               Id="5d2b68fd-0881-4965-bc73-de2918f5f5f5"
-              LastKnownName="san pham"
+              LastKnownName="sanpham"
               LastKnownLocation="qlbah-usecase.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3457,7 +3514,7 @@
     <packageHasNamedElement>
       <class
         Id="83803775-e760-4c03-b2c2-4d03d97c7590"
-        name="thong ke dat hang"
+        name="thongkedathang"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3466,7 +3523,7 @@
             Id="6b426fa7-ed40-444b-b729-02281d4c6244">
             <classMoniker
               Id="6e232789-a910-4f66-b933-e14c8ef58997"
-              LastKnownName="don hang"
+              LastKnownName="donhang"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3488,7 +3545,7 @@
     <packageHasNamedElement>
       <class
         Id="43218d95-cca7-4d81-8d18-919f45f1ee73"
-        name="thong ke so nguoi truy cap"
+        name="thongkesonguoitruycap"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3497,7 +3554,7 @@
             Id="5f40d1b1-9c38-466e-853c-808ef13f70e0">
             <classMoniker
               Id="d1b1b49d-880b-426a-91fe-1825d43a560b"
-              LastKnownName="tai khoan"
+              LastKnownName="taikhoan"
               LastKnownLocation="qlbah-usecase.uml" />
           </dependency>
         </suppliersInternal>
@@ -3530,7 +3587,7 @@
     <packageHasNamedElement>
       <class
         Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
-        name="hinh thuc thanh toan"
+        name="hinhthucthanhtoan"
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
@@ -3573,7 +3630,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
-              LastKnownName="hinh thuc thanh toan"
+              LastKnownName="hinhthucthanhtoan"
               LastKnownLocation="qlbah-usecase.uml" />
           </generalization>
         </generalsInternal>
@@ -3592,7 +3649,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="7937f342-9bd3-44b9-895a-9c1ca058efb9"
-              LastKnownName="hinh thuc thanh toan"
+              LastKnownName="hinhthucthanhtoan"
               LastKnownLocation="qlbah-usecase.uml" />
           </generalization>
         </generalsInternal>
@@ -3773,6 +3830,828 @@
           </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e703749c-42ee-4f05-9908-919cbbce0577"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cb5dfa51-5f41-44ae-8b0c-63a78a307fef"
+        name="Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e4eab076-1d46-483b-a909-c84e7b678cfc"
+        name="Model"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="58464b50-8864-4271-85bf-6db1fc89bb90"
+        name="DAO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="77969a08-aa7a-4942-a40c-e439da236dda"
+        name="Service"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="673c3818-9c2d-4927-9b64-af11173e1fae"
+            name="LoaiSanPhamService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e9d80873-58a4-4ea9-a662-54b31e1b5be1"
+            name="NguoiDungService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="434ad214-2539-45a4-b341-0f1d5ecebf41"
+            name="NhaSanXuatService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3c59d092-46a8-4203-9f45-c8c712d45172"
+            name="PhanQuyenService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ceaaab1f-ca7f-4a92-bdd8-d179e27ed3e0"
+            name="SanPhamSerVice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8d3fbec2-04ba-407c-8b5a-a927e6031d43"
+            name="DonHangService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1638c648-b0b3-407a-9238-a72cbc934e3a"
+            name="GiaBanService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c3f273d0-9f5f-4495-9f86-776d2c56247b"
+            name="PhuongThucThanhToanService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29913f1b-4d96-40a3-a5fc-91d2b197632e"
+            name="SanPhamKhuyenMaiService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8d936c07-bdd6-42f5-810f-8e037784a3fb"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ecae0a7e-1190-4570-b5bf-d0eac2dd6bd1"
+            name="SanPhamControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5b2c0d1f-6c73-41b1-86da-80e1eb4a728b"
+            name="LoaiSanPhamControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="94003ffb-4fc4-448d-9a50-5989b07d0b00"
+            name="NhaSanXuatControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ac67ecc2-833b-4995-b775-f1c52d4a8b20"
+            name="NguoiDungControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f592f1de-98e2-45d7-a869-11f964a8fcab"
+            name="PhanQuyenControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ab819e4b-d2c6-456f-94e9-7e7e49368103"
+            name="DonHangControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="26547b72-6516-452a-9256-8024ef3a59f9"
+            name="GiaBanControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ebd4ea2c-6446-4f07-b65c-f7bca335c7ed"
+            name="PhuongThucThanhToanControll"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="64287f87-caa1-4371-9ced-6c0e84486e67"
+            name="SanPhamKhuyenMaiControl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="74f67586-9d5d-4eae-9301-8101b8a462b5"
+        name="DAO"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="a0a6e154-eb51-40e2-bc7a-960e5b930c86"
+            name="LoaiSanPhamDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="774ad1a0-a674-4482-838a-61a45ca3d856"
+            name="NguoiDungDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a6f01190-7591-48ac-9726-edb0d4f838a3"
+            name="NhaSanXuatDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6cdeb3cc-5140-4678-a8a7-b781f2305811"
+            name="PhanQuyenDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="77a0f79b-ab37-4b15-a133-33aa9e9db3ec"
+            name="SanPhamDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7a6c0b41-2926-4093-b77f-85f907b2cd6a"
+            name="DonHangDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8f9c0f10-b062-41e7-9cb7-f2c2ae821e24"
+            name="GiaBanDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="19403de9-dc7b-478e-85d2-3d9fbb4a4b7b"
+            name="PhuongThucThanhToanDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="69ef7dc7-2f5d-482e-8316-784f14c91801"
+            name="SanPhamKhuyenMaiDAO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a07855e5-a4ba-4455-bfd1-bcea5dc7932d"
+        name="Model- hibernate"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e455858b-22ad-4a8f-a49c-e37ef0379d59"
+            name="LoaiSanPhamDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="17702601-4e20-4c44-9373-9063d5c67d33"
+            name="NhaSanXuatDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ed83e292-dbd5-4f4f-8be2-abca2f751f62"
+            name="PhanQuyenDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b6ed57b3-6278-4c99-af23-04bf9fe4d9cf"
+            name="SanPhamDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d30a47f4-720b-4842-b620-6334505b1c1a"
+            name="NguoiDungDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="de499995-f267-494b-a2f6-ec18c1ce8ed1"
+            name="DonHangChiTietDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d4c00ab-8f21-4510-adf1-3350132eb5d1"
+            name="GiaBanDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ab9fd6b2-5c2c-4c6b-b58c-68e13992b3cd"
+            name="SanPhmKhuyenMaiDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="35766aaf-1191-4e49-9d45-28bab6e9fd3c"
+            name="PhuongThucThanhToanDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="61253e2e-a32e-4ba5-b38b-4b5df4317988"
+            name="BangThamSoDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d58c3c75-9cfd-4003-9401-2d05fc4d75d4"
+            name="DonHangDTO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="877f8c76-6269-4b7d-b801-1a8918f830fe"
+        name="ServiceImpl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ecb39e1b-4cae-4d85-8b93-571ac976c2e0">
+            <interfaceMoniker
+              Id="77969a08-aa7a-4942-a40c-e439da236dda"
+              LastKnownName="Service"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c0c5cb40-afda-4215-b968-9357c9193427"
+            name="GiaBanServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c21929fa-9e5f-43b6-a2b7-e77aa370cb49"
+            name="SanPhamServiceServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f60f41bd-09e4-455c-b4b9-95ad00d19305"
+            name="SanPhamKhuyenMaiImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="764067de-04cc-4fa9-9367-ea9c1224fe60"
+            name="NguoiDungServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4c5ccb2d-488f-4246-b631-94acab4bbdea"
+            name="DonHangServiceIMpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a248736d-e66c-47d5-844d-37389c5760c1"
+            name="DonHangChiTietServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a1ef33be-2966-4497-9b5d-b657e40c74e9"
+            name="PhanQuyenServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5dacd102-0a87-493a-a296-02049c8f6bdb"
+            name="PhuongThucThanhToanServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c469876b-d500-4ef9-a0ed-f28bde25849c"
+            name="NhaSanXuatServiceImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9cb5d466-436e-453b-8110-a625adc5f513"
+        name="DAOImpl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0e4bfcdf-9fd7-4e9c-9b72-6712380e46d3">
+            <interfaceMoniker
+              Id="74f67586-9d5d-4eae-9301-8101b8a462b5"
+              LastKnownName="DAO"
+              LastKnownLocation="qlbah-usecase.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="95ec36b9-5d3c-46e6-a98e-6b81e6538908"
+            name="GiaBanDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3a5b7432-0bb4-47cd-b4fe-1ee355f0da3a"
+            name="DonHangDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5ddb123-68db-4241-968d-ae5edc310883"
+            name="LoaiSanPHamDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="05ce2360-72bf-445a-ad31-476bae530092"
+            name="NguoiDungDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f613436e-abdd-4af5-88c1-f94ce024d4a4"
+            name="NhaSanXuatDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ff8f9f44-f378-4a91-8062-0eae2458f251"
+            name="PhanQuyenDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1906f170-5cf5-4b42-9094-64ac72803d52"
+            name="SanPhamDAOImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70fba051-bd31-4ecd-b813-7dd27ee3e992"
+            name="SanPhanKhuyenMaiImpl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="74860b54-93ef-4713-884d-3170fe956382"
+            name="PhuongThucThanhToanDAOImpll"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="46bde4e2-954a-4d5c-ae02-7f07f818be8a"
+        name="NhaSanXuat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0a5bc32a-555e-4aea-a52e-c34be1f8adb5"
+            name="MaNSX"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="34fbdd83-69c4-4745-959a-9abbd1d25f92"
+            name="TenNhsx"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bb62fbbd-3b53-4e0c-b8d9-8664b96dd172"
+        name="nha san xuat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="949065d5-04a2-408f-aea7-e34d6b2e6bed"
+            name="mansx"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="daff23ea-8104-45f0-a80b-6e6d45b9fc5b"
+            name="ten nha san xuat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2067e396-8f25-45f9-9380-6efaee4af969"
+            name="//them nha san xuat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3692fbe1-f75e-4edb-add1-be0326562faf"
+            name="//xoa nha san xuat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bb378a1d-7328-4e52-849b-32bdb3375e87"
+            name="//sua nha san xuat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

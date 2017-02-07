@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a9476d59-7d7d-4f06-9690-4b9759d3997c" name="UMLClassDiagram1" linkedPackageId="ab00a758-30e3-4ad4-a9a2-923b7a180ce2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a9476d59-7d7d-4f06-9690-4b9759d3997c" name="UMLClassDiagram1" linkedPackageId="ab00a758-30e3-4ad4-a9a2-923b7a180ce2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="b2b871f8-2665-49af-b159-11fe68c0fb17" name="Khach hang" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -138,6 +138,32 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="6ee30252-6476-4a59-b88c-c60208589a21" />
           </association>
+          <association Id="c8409a1b-78bb-48c2-942c-151a8addc166" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4104f73a-cfb3-4919-8813-432c001e28cf" LastKnownName="nha san xuat" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed2b836c-8989-4996-bf8f-3551c0364a4c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2b9ff014-d4ea-44b1-9baf-d797be3b04f2" name="Lower" value="1">
+                      <elementDefinition Id="d6df76b4-faea-4859-ae41-344eb3676723" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8c4080d9-aa35-4a2a-a586-f0f41ce9cfbd" name="Upper" value="*">
+                      <elementDefinition Id="947e4bb2-6a1c-48d1-ac28-dd4a3f582484" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9fb2955e-8d8a-40f5-850a-b1b6d1f2f118" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7bac2a23-39e8-4610-8a2c-27b5f863017f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba82f3cc-8ea8-465b-be93-38857cefc7b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0aecd39c-4bdb-41c1-97aa-e4028a578033" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="1aed38f9-bab1-4d7c-80e0-3f2f0063913e" name="loai san phan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -145,9 +171,6 @@
           </property>
           <property Id="4fd4676a-538b-4a70-9f1c-bc40791c0149" name="ten san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1955b002-2e51-4b03-be34-f1604d9a6ac6" />
-          </property>
-          <property Id="84f6fce4-3895-401e-a6a5-7326176aa548" name="nhom san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c8f2d11a-19e7-4526-b430-51ff4a2aaab8" />
           </property>
           <property Id="a8c1b385-d304-4ef5-9545-193ab32968c0" name="mo ta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="042321c1-86ad-44b0-acdd-40a8929fafcf" />
@@ -157,6 +180,12 @@
           </property>
           <property Id="ea623726-58e4-4793-aff3-ae2eab06c663" name="don gia" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a75d4882-bc66-4d61-ad5f-f9c79f73e9ef" />
+          </property>
+          <property Id="d62a51eb-2c7f-47b4-8070-bacbd64bcddf" name="nha san xuat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d84d867d-396e-431a-96af-567fba5747b3" />
+          </property>
+          <property Id="2068e36b-5e2d-4039-8f09-ff180cc5de66" name="loai san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="772b83e6-19bf-4089-8e49-ba7476a6ce93" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -292,9 +321,6 @@
       <class Id="6a6adfd2-c96c-4d13-b022-b2f05e305ee2" name="loai san pham" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0adb3c6f-4e66-4406-baf5-15b398541667" />
         <ownedAttributesInternal>
-          <property Id="9b639fdd-c42e-4953-b281-c5f14ff94947" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="183f9b6e-f961-489e-9d05-82d00a50a431" />
-          </property>
           <property Id="23be93e9-c355-4a09-8829-1ef537b21f58" name="thong tin loai san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="135ed10b-8e68-4fe5-98e2-0d7981d5fcf1" />
           </property>
@@ -389,9 +415,6 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="e77806d8-d74e-4a52-9345-b6c57f5f8127" name="san pham" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="0544d13d-e97f-439b-b3da-42d5b93795d8" />
-          </property>
           <property Id="3a84a063-cd36-4417-b27a-02d80bca3434" name="mo ta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3ceacdcd-088a-4e31-8fcc-b8f058e989f0" />
           </property>
@@ -562,6 +585,30 @@
             <elementDefinition Id="4bc6e16d-7215-4533-ad7a-cfe66ff274a9" />
           </generalization>
         </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4104f73a-cfb3-4919-8813-432c001e28cf" name="nha san xuat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb62fbbd-3b53-4e0c-b8d9-8664b96dd172" />
+        <ownedAttributesInternal>
+          <property Id="41e887d2-0271-4d97-8f62-1bdfe6a4e75f" name="mansx" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="949065d5-04a2-408f-aea7-e34d6b2e6bed" />
+          </property>
+          <property Id="0354aac4-f1b1-408f-bf55-11c57872b93b" name="ten nha san xuat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="daff23ea-8104-45f0-a80b-6e6d45b9fc5b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1c057992-9e7d-4b93-8102-5141f2d301ff" name="//them nha san xuat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2067e396-8f25-45f9-9380-6efaee4af969" />
+          </operation>
+          <operation Id="7941b934-bfa3-4cff-86c1-699887d2abec" name="//xoa nha san xuat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3692fbe1-f75e-4edb-add1-be0326562faf" />
+          </operation>
+          <operation Id="cf1e4bd5-cd2c-4b7c-885b-2352d0788699" name="//sua nha san xuat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb378a1d-7328-4e52-849b-32bdb3375e87" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

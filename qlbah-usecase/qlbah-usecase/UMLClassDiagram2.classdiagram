@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5bb669f7-7539-4939-baf4-dfee9365317c" name="UMLClassDiagram2" linkedPackageId="fc256a32-af7f-4b49-9b15-db5463ed2385" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="102e7041-ca6c-420f-a9d1-3e2fda31806d">
+      <profileInstance Id="53339415-ca86-4949-81f0-5e7a1fd7267a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="33ce243f-a59e-40c5-864e-cc8fd302cada">
+      <profileInstance Id="f9fd997a-409e-4172-80e7-2061a6b376c0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="0d06eabd-8edd-4133-aefb-ab717206a040" name="Service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77969a08-aa7a-4942-a40c-e439da236dda" />
+        <ownedAttributes>
+          <property Id="413ca79a-0b9a-43e5-967a-802a9664a35b" name="LoaiSanPhamService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="673c3818-9c2d-4927-9b64-af11173e1fae" />
+          </property>
+          <property Id="38aa7342-f26e-4c09-9a71-677ca645395e" name="NguoiDungService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9d80873-58a4-4ea9-a662-54b31e1b5be1" />
+          </property>
+          <property Id="02cc8d59-a892-4cf0-b7fb-dcfcac2a74f3" name="NhaSanXuatService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="434ad214-2539-45a4-b341-0f1d5ecebf41" />
+          </property>
+          <property Id="174beb1c-bd6c-4b7c-87c7-bf400c7a3ad5" name="PhanQuyenService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c59d092-46a8-4203-9f45-c8c712d45172" />
+          </property>
+          <property Id="1608a537-a38a-4c60-b985-78d8f6747f92" name="SanPhamSerVice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceaaab1f-ca7f-4a92-bdd8-d179e27ed3e0" />
+          </property>
+          <property Id="8b897399-7842-4c2e-b25c-939a13ca4b4b" name="DonHangService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d3fbec2-04ba-407c-8b5a-a927e6031d43" />
+          </property>
+          <property Id="ca7a3e1f-d9e0-416d-9ea2-da7ef6eb595a" name="GiaBanService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1638c648-b0b3-407a-9238-a72cbc934e3a" />
+          </property>
+          <property Id="8c4d5523-188e-4373-8957-ab71267c74fc" name="PhuongThucThanhToanService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c3f273d0-9f5f-4495-9f86-776d2c56247b" />
+          </property>
+          <property Id="10491fb5-ac51-40c8-82df-9e482a714f11" name="SanPhamKhuyenMaiService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29913f1b-4d96-40a3-a5fc-91d2b197632e" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6173a104-4582-41d9-8b15-21d683cce61c" name="Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8d936c07-bdd6-42f5-810f-8e037784a3fb" />
+        <ownedAttributesInternal>
+          <property Id="72bfd93c-eda9-4357-9b38-c1c006c65da1" name="SanPhamControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecae0a7e-1190-4570-b5bf-d0eac2dd6bd1" />
+          </property>
+          <property Id="31970954-6174-4dd8-8b80-10dfd2cb15e4" name="LoaiSanPhamControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b2c0d1f-6c73-41b1-86da-80e1eb4a728b" />
+          </property>
+          <property Id="6732a509-4f3d-41f9-8408-c3ce6a4f77e5" name="NhaSanXuatControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94003ffb-4fc4-448d-9a50-5989b07d0b00" />
+          </property>
+          <property Id="133a3485-dd90-41d9-a721-4af13e0d6333" name="NguoiDungControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac67ecc2-833b-4995-b775-f1c52d4a8b20" />
+          </property>
+          <property Id="9b69b463-0774-4571-a6fd-642654ff7a4c" name="PhanQuyenControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f592f1de-98e2-45d7-a869-11f964a8fcab" />
+          </property>
+          <property Id="95c1cb87-c774-4f7f-8a80-6743c51f9fbd" name="DonHangControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab819e4b-d2c6-456f-94e9-7e7e49368103" />
+          </property>
+          <property Id="093f0561-2d58-4467-9bc2-e9661a5502a0" name="GiaBanControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26547b72-6516-452a-9256-8024ef3a59f9" />
+          </property>
+          <property Id="12cef887-0543-40c8-8920-57b132714a05" name="PhuongThucThanhToanControll" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ebd4ea2c-6446-4f07-b65c-f7bca335c7ed" />
+          </property>
+          <property Id="317a6243-43d4-4b6b-8630-71e06d20ad4b" name="SanPhamKhuyenMaiControl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64287f87-caa1-4371-9ced-6c0e84486e67" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3983b679-3330-40df-971f-7f8c6c6e6ed8" name="DAO" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74f67586-9d5d-4eae-9301-8101b8a462b5" />
+        <ownedAttributes>
+          <property Id="8f7fe6c5-52cd-453a-ae44-a7fce7036ab3" name="LoaiSanPhamDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0a6e154-eb51-40e2-bc7a-960e5b930c86" />
+          </property>
+          <property Id="44dcce53-87c6-4b69-b294-dc122cac2b91" name="NguoiDungDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="774ad1a0-a674-4482-838a-61a45ca3d856" />
+          </property>
+          <property Id="1f746fc3-2f80-41c0-9f04-1f7b51487a50" name="NhaSanXuatDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6f01190-7591-48ac-9726-edb0d4f838a3" />
+          </property>
+          <property Id="9faf1c44-da01-48cc-b13f-9dccecf4fbd3" name="PhanQuyenDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cdeb3cc-5140-4678-a8a7-b781f2305811" />
+          </property>
+          <property Id="8de46434-ae4f-42ff-8b9d-396327e3da12" name="SanPhamDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77a0f79b-ab37-4b15-a133-33aa9e9db3ec" />
+          </property>
+          <property Id="73140ef3-fccd-468f-b775-2cd535ca6f00" name="DonHangDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a6c0b41-2926-4093-b77f-85f907b2cd6a" />
+          </property>
+          <property Id="45d4b7df-68a3-476b-8869-f1a32971dd7b" name="GiaBanDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f9c0f10-b062-41e7-9cb7-f2c2ae821e24" />
+          </property>
+          <property Id="bdee463a-8898-420e-9c55-5408dd4979bd" name="PhuongThucThanhToanDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="19403de9-dc7b-478e-85d2-3d9fbb4a4b7b" />
+          </property>
+          <property Id="aeaf2ab8-87ce-459d-aafa-ef3d0f8e4432" name="SanPhamKhuyenMaiDAO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69ef7dc7-2f5d-482e-8316-784f14c91801" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a6494e92-2e5e-4ff5-9e93-deb717fb1da5" name="Model- hibernate" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a07855e5-a4ba-4455-bfd1-bcea5dc7932d" />
+        <ownedAttributesInternal>
+          <property Id="dbe62f31-e3d2-45c8-9cfb-4f7bf3cc213e" name="LoaiSanPhamDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e455858b-22ad-4a8f-a49c-e37ef0379d59" />
+          </property>
+          <property Id="7e63b9cc-ee10-4e1e-824b-4117c650ffa1" name="NhaSanXuatDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17702601-4e20-4c44-9373-9063d5c67d33" />
+          </property>
+          <property Id="13560be5-59d2-49bb-9141-3b42a5e5f62d" name="PhanQuyenDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ed83e292-dbd5-4f4f-8be2-abca2f751f62" />
+          </property>
+          <property Id="139b4889-9b4a-4252-bfd3-37e4013b4a46" name="SanPhamDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6ed57b3-6278-4c99-af23-04bf9fe4d9cf" />
+          </property>
+          <property Id="ad2726f7-84f5-43ff-a2c4-38f4306b357b" name="NguoiDungDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d30a47f4-720b-4842-b620-6334505b1c1a" />
+          </property>
+          <property Id="e5c13712-6fef-4575-8ef7-3ff199bd2b66" name="DonHangChiTietDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de499995-f267-494b-a2f6-ec18c1ce8ed1" />
+          </property>
+          <property Id="9b140792-d61e-4aa0-a8a7-1ac778f883f6" name="GiaBanDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d4c00ab-8f21-4510-adf1-3350132eb5d1" />
+          </property>
+          <property Id="8d3f8c45-8f46-41e1-b92a-2f709d20d4b7" name="SanPhmKhuyenMaiDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab9fd6b2-5c2c-4c6b-b58c-68e13992b3cd" />
+          </property>
+          <property Id="71459ce6-702c-4415-b8ca-fcda23fbc193" name="PhuongThucThanhToanDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35766aaf-1191-4e49-9d45-28bab6e9fd3c" />
+          </property>
+          <property Id="52d6e132-a15d-4917-b5ff-8784b8e3a161" name="BangThamSoDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61253e2e-a32e-4ba5-b38b-4b5df4317988" />
+          </property>
+          <property Id="a84ac94e-17ca-4ccc-82c2-c2a797dad133" name="DonHangDTO" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d58c3c75-9cfd-4003-9401-2d05fc4d75d4" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b05d1b7e-cc4a-4474-9573-700daf09ce4b" name="ServiceImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="877f8c76-6269-4b7d-b801-1a8918f830fe" />
+        <suppliersInternal>
+          <interfaceRealization Id="4519b201-19d2-49e7-8e9c-105bbde51876">
+            <interfaceMoniker Id="0d06eabd-8edd-4133-aefb-ab717206a040" LastKnownName="Service" />
+            <elementDefinition Id="ecb39e1b-4cae-4d85-8b93-571ac976c2e0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="d6e005f6-5f87-433e-ad04-cb76d5081008" name="GiaBanServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0c5cb40-afda-4215-b968-9357c9193427" />
+          </property>
+          <property Id="0e88e146-3019-41e2-b433-57dda051eda2" name="SanPhamServiceServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c21929fa-9e5f-43b6-a2b7-e77aa370cb49" />
+          </property>
+          <property Id="6531262c-37ae-421a-8e1d-7595b9d92f07" name="SanPhamKhuyenMaiImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f60f41bd-09e4-455c-b4b9-95ad00d19305" />
+          </property>
+          <property Id="18e238c7-97c9-47ca-9109-3800a62e706e" name="NguoiDungServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="764067de-04cc-4fa9-9367-ea9c1224fe60" />
+          </property>
+          <property Id="ea1f2539-3eb5-4db8-b3a6-0b79c705f3e0" name="DonHangServiceIMpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c5ccb2d-488f-4246-b631-94acab4bbdea" />
+          </property>
+          <property Id="de096ee3-415b-464c-a3b4-7dff24c9bda5" name="DonHangChiTietServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a248736d-e66c-47d5-844d-37389c5760c1" />
+          </property>
+          <property Id="5c89d541-d54b-4e08-9ad3-5def978c2797" name="PhanQuyenServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a1ef33be-2966-4497-9b5d-b657e40c74e9" />
+          </property>
+          <property Id="cf9bf7b2-5db8-440c-84c9-04797f9429e1" name="PhuongThucThanhToanServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5dacd102-0a87-493a-a296-02049c8f6bdb" />
+          </property>
+          <property Id="846edbbf-94f3-448c-b6b2-0c958a91f2cd" name="NhaSanXuatServiceImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c469876b-d500-4ef9-a0ed-f28bde25849c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c9df3539-4437-4bdd-9272-0dad40b6abea" name="DAOImpl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9cb5d466-436e-453b-8110-a625adc5f513" />
+        <suppliersInternal>
+          <interfaceRealization Id="40f4581f-5a23-4801-9ee3-adac623d7e37">
+            <interfaceMoniker Id="3983b679-3330-40df-971f-7f8c6c6e6ed8" LastKnownName="DAO" />
+            <elementDefinition Id="0e4bfcdf-9fd7-4e9c-9b72-6712380e46d3" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="9cd9f4d6-615b-42da-b346-34c018c45b8e" name="GiaBanDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="95ec36b9-5d3c-46e6-a98e-6b81e6538908" />
+          </property>
+          <property Id="b429f015-9b22-4d62-8da8-b7bd21f05637" name="DonHangDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a5b7432-0bb4-47cd-b4fe-1ee355f0da3a" />
+          </property>
+          <property Id="9317d9ac-abc0-436d-bb59-9560d32c8038" name="LoaiSanPHamDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5ddb123-68db-4241-968d-ae5edc310883" />
+          </property>
+          <property Id="34baace0-7c3b-4069-a533-ea1c734db9de" name="NguoiDungDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05ce2360-72bf-445a-ad31-476bae530092" />
+          </property>
+          <property Id="925db56f-a8b3-4bc9-8c20-f76ee213eb5e" name="NhaSanXuatDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f613436e-abdd-4af5-88c1-f94ce024d4a4" />
+          </property>
+          <property Id="7af010a3-5927-4a31-a01e-b8c77ca102c6" name="PhanQuyenDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff8f9f44-f378-4a91-8062-0eae2458f251" />
+          </property>
+          <property Id="0d9ddf95-2a9d-48d4-bb8a-178c540a8d17" name="SanPhamDAOImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1906f170-5cf5-4b42-9094-64ac72803d52" />
+          </property>
+          <property Id="56eddaf8-134e-4f47-b58a-f269c868f2ee" name="SanPhanKhuyenMaiImpl" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="70fba051-bd31-4ecd-b813-7dd27ee3e992" />
+          </property>
+          <property Id="45b57e8b-58b7-4a62-990f-052615800036" name="PhuongThucThanhToanDAOImpll" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74860b54-93ef-4713-884d-3170fe956382" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="fc256a32-af7f-4b49-9b15-db5463ed2385" name="qlbah-usecase">
+    <elementDefinition Id="99bde675-456b-4465-a656-1d82dacae047" />
+  </package>
+</logicalClassDesignerModel>
