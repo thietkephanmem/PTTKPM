@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+      
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     
+        <link href="assets/css/style.css" rel="stylesheet" />
+      
+    </head>
+    <body ng-app="myApp" ng-controller="sanphamctrl" ng-init="getEventNew()">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>Email: </strong>info@yourdomain.com
+                        &nbsp;&nbsp;
+                        <strong>Support: </strong>+90-897-678-44
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END-->
+        <div ng-include="'header.html'"></div>
+        <!-- <input type="button" class="btn btn-primary" value="Tạo sản phẩm"/> -->
+        <hr>
+        <a href="createsp.html" class="btn btn-primary" style="margin-bottom:10px">Tạo sản phẩm</a>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Ngày nhập</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Mô tả </th>
+                        <th># #</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="sp in sanpham">
+                        <td><a href="editsp.html?masp={{sp.ma_sp}}">{{sp.ten_sp}}</a></td>
+                        <td>{{sp.ngay_nhap | date : "dd.MM.y"}} </td>
+                        <td>
+                            <label class="label label-info">{{sp.gia}} VND </label>
+                        </td>
+                        <td>
+                            <label class="">{{sp.soluong}}</label>
+                        </td>
+                        <td>
+                           {{sp.mo_ta}}
+                        </td>
+                        <td> 
+                            <a href="#"  class="btn btn-xs btn-danger"  ng-click="deletesp(sp.ma_sp,sp.ma_loai.ma_loai_sp,sp.nha_sx.ma_nha_sx)">Delete</a> 
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+<!-- CONTENT-WRAPPER SECTION END-->
+<div ng-include="'footer.html'"></div>
+<!-- FOOTER SECTION END-->
+<!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY SCRIPTS -->
+<script src="assets/js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/sanpham.js"></script>
+</body>
+</html>

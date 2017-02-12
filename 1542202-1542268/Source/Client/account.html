@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+
+	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>	
+</head>
+<body ng-app="myApp" ng-controller="logincontroller" >
+	<div data-ng-include="'header.html'"></div>
+
+
+
+	<div class="container">
+		<div class="account">
+			<h2 class="account-in">Account</h2>
+			<form>
+				<div>
+					<span>Username*</span>
+					<input type="text" ng-model="user">
+				</div> 	
+					
+				
+				<div> 
+					<span class="word">Password*</span>
+					<input type="password" ng-model="pass">
+				</div>				
+				<input type="submit" value="Login" ng-click="checklogin()"> 
+			</form>
+		</div>
+	</div>
+
+	<div data-ng-include="'footer.html'"></div>
+
+</body>
+</html>
