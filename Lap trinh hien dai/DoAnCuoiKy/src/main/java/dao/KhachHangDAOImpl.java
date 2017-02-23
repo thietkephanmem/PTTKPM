@@ -45,4 +45,22 @@ public class KhachHangDAOImpl implements KhachHangDAO {
 		}
 	}
 
+	@Override
+	public void createKH(KhachHangDTO dto) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+		
+			session.saveOrUpdate(dto);
+
+			session.getTransaction().commit();
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+		
+		}
+		
+	}
+
 }

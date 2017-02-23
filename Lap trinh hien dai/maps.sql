@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2017-02-21 07:34:09
+Date: 2017-02-23 19:32:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,14 +24,19 @@ CREATE TABLE `khachhang` (
   `diachi` varchar(200) DEFAULT NULL,
   `sdt` int(11) DEFAULT NULL,
   `loaixe` int(11) DEFAULT NULL,
+  `lat` varchar(45) DEFAULT NULL,
+  `latnew` varchar(45) DEFAULT NULL,
+  `lng` varchar(45) DEFAULT NULL,
+  `lngnew` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`makh`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of khachhang
 -- ----------------------------
-INSERT INTO `khachhang` VALUES ('1', '235 nguyen van cu, quan 1, tphcm', '1234', '0');
-INSERT INTO `khachhang` VALUES ('2', '2 hung vuong, quan 10, tphcm', '123', '1');
+INSERT INTO `khachhang` VALUES ('1', '237 nguyen van cu, quan 1, tp hcm', '0', '0', '10.764909', '10.764234437442415', '106.68192380000005', '106.68394082117925');
+INSERT INTO `khachhang` VALUES ('2', '2 hung vuong, quan 10, tphcm', '123', '1', '10.7612533', '10.7612533', '106.67468980000001', '106.67468980000001');
+INSERT INTO `khachhang` VALUES ('3', 'hcm', '123', null, null, null, null, null);
 
 -- ----------------------------
 -- Table structure for taixe

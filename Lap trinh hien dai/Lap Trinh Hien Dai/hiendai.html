@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script 
+  src="https://maps.googleapis.com/maps/api/js?v=3.27&key=AIzaSyAlNOU0el4TTZKbV6aW0GQhBriQGU4Orv0&signed_in=true&callback=initMap">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" t
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  
+  <meta charset="utf-8">
+  <title>Marker animations with <code>setTimeout()</code></title>
+  <style>
+      /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        margin-left: -52px;
+      }
+      </style>
+
+      <script type="text/javascript">
+
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      var app = angular.module('myApp', ['ngRoute']);
+      app.controller('myCtrl', function($scope, $http) {
+// $(document).ready(function(){
+
+    // var config = {
+    //     apiKey: "AIzaSyAynpgdgt7unlb3Pvd4hZR0L1Wdz58-Xm8",
+    //     authDomain: "fir-fab57.firebaseapp.com",
+    //     databaseURL: "https://fir-fab57.firebaseio.com",
+    //     storageBucket: "fir-fab57.appspot.com",
+    //     messagingSenderId: "526022320822"
+    //   };
+    //   firebase.initializeApp(config);
+    //   const dboz= firebase.database().ref();
+
+    //   dboz.on('value', function(snap){
+    //     console.log(snap.val().TaiXe);
+
+
+    //     var neighborhoods = snap.val().TaiXe;
+    //     drop(snap.val().TaiXe);
+
+    //   });
+var arrayMarKerTX = [];
+  var service = new google.maps.DistanceMatrixService;
+ $scope.test = function (a,b)
+  {
+       service.getDistanceMatrix({
+                  origins: new google.maps.LatLng(a,b),
+                  destinations: new google.maps.LatLng(a,b),
+                  travelMode: 'DRIVING',
+                  avoidHighways: true,
+                  avoidTolls: true
+              }, function(response, status) {
+                
+                ssssssssssss
+                              nearest_text = "123";
+                    
+              });
+  }
+
+function findNearestMarker(markerKH, markerTX) {
+
+  var minDist = 1000,
+    nearest_text = '*None*',
+    markerDist,
+    // get all objects added to the map
+ 
+    i;
+
+    console.log(markerTX[0]);
+     
+  // iterate over objects and calculate distance between them
+  for (i = 0; i < markerTX.length; i += 1) {
+    // markerDist = markerTX[i].getPosition().distance(markerKH);
+   //  alert(new google.maps.LatLng(markerKH.getPosition().lat(),markerKH.getPosition().lng()));
+   // $scope.test(markerKH.getPosition().lat(),markerKH.getPosition().lng());
+
+    // if (markerDist < minDist) {
+    //   minDist = markerDist;
+    //   nearest_text = objects[i].getData();
+
+    // }
+     var origin1 = {lat: 55.93, lng: -3.118};
+        var origin2 = 'Greenwich, England';
+        var destinationA = 'Stockholm, Sweden';
+        var destinationB = {lat: 50.087, lng: 14.421};
+
+        var destinationIcon = 'https://chart.googleapis.com/chart?' +
+            'chst=d_map_pin_letter&chld=D|FF0000|000000';
+        var originIcon = 'https://chart.googleapis.com/chart?' +
+            'chst=d_map_pin_letter&chld=O|FFFF00|000000';
+    var service = new google.maps.DistanceMatrixService;
+        service.getDistanceMatrix({
+          origins: [origin1, origin2],
+          destinations: [destinationA, destinationB],
+          travelMode: 'DRIVING',
+          unitSystem: google.maps.UnitSystem.METRIC,
+          avoidHighways: false,
+          avoidTolls: false
+        }, function(response, status) {
+          if (status !== 'OK') {
+            alert('Error was: ' + status);
+          } else {
+            var originList = response.originAddresses;
+            var destinationList = response.destinationAddresses;
+            var outputDiv = document.getElementById('output');
+            deleteMarkers(markersArray);
+
+            var showGeocodedAddressOnMap = function(asDestination) {
+              var icon = asDestination ? destinationIcon : originIcon;
+              return function(results, status) {
+                  alert('Geocode was not successful due to: ');
+                if (status === 'OK') {
+                  map.fitBounds(bounds.extend(results[0].geometry.location));
+                  markersArray.push(new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location,
+                    icon: icon
+                  }));
+                } else {
+                  alert('Geocode was not successful due to: ' + status);
+                }
+              };
+            };
+
+            for (var i = 0; i < originList.length; i++) {
+              var results = response.rows[i].elements;
+              geocoder.geocode({'address': originList[i]},
+                  showGeocodedAddressOnMap(false));
+              for (var j = 0; j < results.length; j++) {
+                geocoder.geocode({'address': destinationList[j]},
+                    showGeocodedAddressOnMap(true));
+
+                                      alert('haha: ' + results[j].distance.text);
+
+              }
+            }
+          }
+        });
+  }
+
+  alert('Tai xe gan nhat la: ' + nearest_text);
+}
+
+    $scope.updateKH = function(makh, diachi, sdt, loaixe, lat, lng, latnew, lngnew)
+    {
+      var data = {
+        makh: makh,
+        diachi: diachi,
+        sdt: sdt,
+        loaixe: loaixe,
+        lat: lat,
+        lng: lng,
+        latnew: latnew,
+        lngnew: lngnew
+      }
+      $http.post("http://localhost:8080/DoAnCuoiKy/khachhang/create",data)
+      .then(function(response) {
+        console.log(response.data);
+      });
+    }
+    $scope.createKH = function(diachi, sdt, loaixe, lat, lng, latnew, lngnew)
+    {
+      var data = {
+        diachi: diachi,
+        sdt: sdt,
+        loaixe: loaixe,
+        lat: lat,
+        lng: lng,
+        latnew: latnew,
+        lngnew: lngnew
+      }
+      $http.post("http://localhost:8080/DoAnCuoiKy/khachhang/create",data)
+      .then(function(response) {
+        console.log(response.data);
+      });
+    }
+    $scope.geocodeAddress = function (address) 
+    {
+      var geocoder = new google.maps.Geocoder();
+      // var address = document.getElementById('address').value;
+      geocoder.geocode({'address': address.diachi}, 
+        function(results, status) 
+        {
+          console.log(results);
+          if (status === 'OK') 
+          {
+            // $scope.createtx(results[0].geometry.location.lat(),results[0].geometry.location.lng(),results[0].formatted_address);
+            if(address.latnew != null)
+            {
+               dropKH(address, address.latnew,address.lngnew);
+
+            }
+            else{
+               dropKH(address,results[0].geometry.location.lat(),results[0].geometry.location.lng());
+              $scope.updateKH(address.makh, address.diachi, address.sdt, address.loaixe, results[0].geometry.location.lat(), results[0].geometry.location.lng(),results[0].geometry.location.lat(),results[0].geometry.location.lng());
+            }
+           
+            // alert(results[0].formatted_address);
+            
+          } else 
+          {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+    }
+$scope.getdataKH = function ()
+{
+
+  $http.get("http://localhost:8080/DoAnCuoiKy/khachhang/list")
+  .then(function(response) { 
+    console.log('hahah');
+    console.log(response.data[0].diachi);
+    for (var i = 0; i < response.data.length; i++) {
+      $scope.geocodeAddress(response.data[i]);
+    };
+  });
+}
+$scope.getdata = function ()
+{
+
+  $http.get("http://localhost:8080/DoAnCuoiKy/taixe/list")
+  .then(function(response) { 
+
+    drop(response.data); 
+  });
+}
+
+var markers = [];
+var map;
+
+$scope.initMap= function () {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: {lat: 10.762681, lng: 106.682059}
+  }); 
+  $scope.getdata();
+  $scope.getdataKH();
+  var geocoder = new google.maps.Geocoder();
+
+  document.getElementById('submit').addEventListener('click', function() {
+          // geocodeAddress(geocoder, map);
+        });
+
+};
+function dropKH(c,a,b) {
+  clearMarkers();
+
+    addMarkerWithTimeoutKH(c,a,b, 200);
+  
+}
+function drop(neighborhoods) {
+  clearMarkersTX();
+  for (var i = 0; i < neighborhoods.length; i++) {
+    console.log(neighborhoods[i].lat + neighborhoods[i].lng);
+    addMarkerWithTimeout(neighborhoods[i].lat,neighborhoods[i].lng, i * 200);
+  }
+}
+function addMarkerWithTimeoutKH(c,position1, position2, timeout) {
+  var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(position1, position2),
+      map: map,
+      draggable: true,
+      icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+      animation: google.maps.Animation.DROP
+    });
+  window.setTimeout(function() {
+    
+    markers.push(marker);
+  }, timeout);
+
+
+  google.maps.event.addListener(marker,'dragend', function(){
+    console.log(marker.getPosition().lat());
+    console.log(marker.getPosition().lng());
+    $scope.updateKH(c.makh, c.diachi, c.sdt, c.loaixe, c.lat, c.lng,marker.getPosition().lat(),marker.getPosition().lng());
+
+
+  });
+  var infowindow = new google.maps.InfoWindow({
+          content: c.diachi
+        });
+   marker.addListener('click', function() {
+          findNearestMarker(marker, arrayMarKerTX)
+          infowindow.open(map, marker);
+        });
+}
+function addMarkerWithTimeout(position1, position2, timeout) {
+  window.setTimeout(function() {
+    arrayMarKerTX.push(new google.maps.Marker({
+      position: new google.maps.LatLng(position1, position2),
+      map: map,
+      animation: google.maps.Animation.DROP
+    }));
+  }, timeout);
+
+
+
+}
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers = [];
+}
+function clearMarkersTX() {
+  for (var i = 0; i < arrayMarKerTX.length; i++) {
+    arrayMarKerTX[i].setMap(null);
+  }
+  arrayMarKerTX = [];
+}
+
+
+
+
+});
+
+// }
+</script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+  <div id="map" ng-init="initMap()" ></div>
+
+</body>
+</html>

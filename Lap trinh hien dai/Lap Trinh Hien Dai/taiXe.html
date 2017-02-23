@@ -1,0 +1,70 @@
+<html >
+<head>
+	<title>TaiXe</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" t
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?v=3.27&key=AIzaSyAlNOU0el4TTZKbV6aW0GQhBriQGU4Orv0&signed_in=true&callback=initMap">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  
+  <script>
+  // Initialize Firebase
+  
+
+
+  var app = angular.module('myApp', ['ngRoute']);
+  app.controller('myCtrl', function($scope, $http) {
+
+    
+    $scope.diachithat = "dia chi chinh xac o day";
+    $scope.geocodeAddress = function () 
+    {
+      var geocoder = new google.maps.Geocoder();
+      var address = document.getElementById('address').value;
+      geocoder.geocode({'address': address}, 
+        function(results, status) 
+        {
+          console.log(results);
+          if (status === 'OK') 
+          {
+            $scope.createtx(results[0].geometry.location.lat(),results[0].geometry.location.lng(),results[0].formatted_address);
+
+            alert(results[0].formatted_address);
+            
+          } else 
+          {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+    }
+
+    $scope.createtx = function(a,b,c) {
+
+      var data ={
+        lat : a,
+        lng: b,
+        address: c
+      };
+
+      $http.post("http://localhost:8080/DoAnCuoiKy/taixe/create",data)
+      .then(function(response) {
+        console.log(response.data);
+      });
+    };
+
+  });
+    // }
+
+    </script>
+
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl"> 
+    <p>Nhap thong tin tai xe</p>
+    <input type="text" name="" value="" placeholder="nhap dia chi" id="address">
+    <input type="button" name="" value="Gui" ng-click="geocodeAddress()">
+    <p>{{diachithat}}</p>
+  </body>
+  </html>

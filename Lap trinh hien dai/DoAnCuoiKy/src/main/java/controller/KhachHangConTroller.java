@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,5 +40,17 @@ public class KhachHangConTroller {
 		return json;
 	}
 	
+	@RequestMapping(value ="/khachhang/create", method = RequestMethod.POST)
+	public @ResponseBody String create(@RequestBody String tx) 
+	{
+		try {
+			Gson gson = new Gson();
+			KhachHangDTO oj = gson.fromJson(tx, KhachHangDTO.class);
+			hangService.createKhachHang(oj);
+			return new Gson().toJson(oj);
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+	}
 	
 }

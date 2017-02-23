@@ -18,6 +18,39 @@ public class KhachHangDTO {
 	private String sdt;
 	@Column(name = "loaixe")
 	private Boolean loaixe;
+	@Column(name = "lat")
+	private String lat;
+	@Column(name = "latnew")
+	private String latnew;
+	@Column(name = "lng")
+	private String lng;
+	@Column(name = "lngnew")
+	private String lngnew;
+	
+	public String getLat() {
+		return lat;
+	}
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+	public String getLatnew() {
+		return latnew;
+	}
+	public void setLatnew(String latnew) {
+		this.latnew = latnew;
+	}
+	public String getLng() {
+		return lng;
+	}
+	public void setLng(String lng) {
+		this.lng = lng;
+	}
+	public String getLngnew() {
+		return lngnew;
+	}
+	public void setLngnew(String lngnew) {
+		this.lngnew = lngnew;
+	}
 	public Integer getMakh() {
 		return makh;
 	}
